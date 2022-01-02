@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.image {
+  background-image: url(./assets/images/main-logo1920.png);
+  width: 100%;
+  height: 1040px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1440px) {
+  .image {
+    background-image: url(./assets/images/main-logo1440.png);
+    height: 780px;
+    
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    background-image: url(./assets/images/main-logo1024.png);
+    height: 555px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    background-image: url(./assets/images/main-logo768.png);
+    height: 1508px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .image {
+    background-image: url(./assets/images/main-logo425.png);
+    height: 838px;
+
+  }
+}
