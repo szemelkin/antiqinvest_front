@@ -1,0 +1,36 @@
+.Investment {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .Investment {
+        margin-top: 50px;
+    }
+}
+
+.Investment > h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 71px;
+  color: #000000;
+  width: 586px;
+  text-align: start;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .Investment > h3 {
+        width: 325px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .Investment > h3 {
+        width: 95%;
+    }
+}
+

@@ -1,6 +1,10 @@
 import "./App.css";
-import Header from './components/Header/Header';
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import Headline from "./components/Headline/Headline";
+import Investment from "./components/Investment/Investment";
+import Transaction from "./components/Transaction/Transaction";
+import Calm from "./components/Сlaim/Calm";
 
 function App() {
   return (
@@ -9,6 +13,10 @@ function App() {
         <Header />
         <Headline />
       </div>
+      <Investment />
+      <Transaction />
+      <Calm />
+      <Footer />
     </div>
   );
 }

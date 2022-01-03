@@ -1,3 +1,5 @@
+@import url(./vendor/normalize.css);
+
 .App {
   text-align: center;
 }
@@ -27,14 +29,36 @@
 @media screen and (max-width: 768px) {
   .image {
     background-image: url(./assets/images/main-logo768.png);
-    height: 1508px;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 425px) {
   .image {
     background-image: url(./assets/images/main-logo425.png);
-    height: 838px;
+   /* height: 838px;*/
+  }
+}
 
+
+.padding {
+  padding-left: 220px;
+}
+
+@media screen and (max-width: 1440px) {
+  .padding {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .padding {
+    padding-left: 20px;
   }
 }

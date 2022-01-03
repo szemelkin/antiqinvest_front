@@ -1,5 +1,6 @@
-import logo from "../../assets/images/logo.png";
 import needle from "../../assets/images/botton-needle.png";
+import Logo from '../Logo/Logo'
+
 
 import "./header.css";
 
@@ -7,10 +8,7 @@ function Header() {
   return (
     <div className="App">
         <header className="header">
-          <div className="header__logo">
-            <a href="/"><img className="header__logo-img" src={logo} /></a>
-            <a className="header__logo-text" href="/">ANTIQ <br /> INVEST</a>
-          </div>
+          <Logo />
           <button>Войти
             <img className="needle" src={needle}/>
           </button>

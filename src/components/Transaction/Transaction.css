@@ -1,0 +1,82 @@
+.Transaction {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  margin: 180px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Transaction {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+    .Transaction {
+      width: 95%;
+    }
+  }
+
+.Transaction__headline {
+  display: flex;
+}
+
+.Transaction__headline > h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 71px;
+  color: #000000;
+  margin: 0;
+  /* width: 474px;*/
+}
+
+@media screen and (max-width: 798px) {
+  .Transaction__headline > h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+.Transaction__hr {
+  margin-left: 25px;
+  margin-top: 15px;
+  width: 52vw;
+}
+
+.Transaction__hr-small {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Transaction__hr-small {
+    display: block;
+    width: 52vw;
+  }
+}
+
+@media screen and (max-width: 1246px) {
+  .Transaction__hr {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .Transaction__hr {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .Transaction__hr {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Transaction__hr {
+    display: none;
+  }
+}

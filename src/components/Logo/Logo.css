@@ -1,0 +1,39 @@
+
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .logo-img {
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .logo-img {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  
+  .logo-text {
+    font-family: "Gilroy", "Arial";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 104.3%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .logo-text {
+      font-size: 15px;
+    }
+  }
+  
