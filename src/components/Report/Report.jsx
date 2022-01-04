@@ -15,7 +15,6 @@ function Report() {
             </div>
             <button>Пополнить</button>
             <button>Вывести</button>
-
         </div>
  
 

@@ -8,12 +8,11 @@
 .MainCabinet__wrapper {
   display: flex;
   flex-direction: column;
-  width: 1480px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1500px) {
-  .as {
+  .MainCabinet__wrapper {
     width: 95%;
   }
 }
@@ -22,8 +21,18 @@
     margin-top: 30px;
 }
 
+
+.MarginBottom20 {
+  margin-bottom: 20px;
+}
+
 .MainCabinet__block {
     display: flex;
     justify-content: space-between;
-  
+}
+
+@media screen and (max-width: 1530px) {
+  .MainCabinet__block {
+    flex-direction: column-reverse;
+  }
 }
