@@ -18,7 +18,7 @@ function Products() {
               <h4>Продукт</h4>
               <h5>Классический <img src={i} /></h5>
             </div>
-            <div className="Products__left-card-block">
+            <div className="Products__left-card-block smallBlock">
               <h4>Сумма</h4>
               <h5>75 000 Р</h5>
             </div>
