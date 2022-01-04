@@ -1,18 +1,20 @@
-import needle from "../../assets/images/botton-needle.png";
-import Logo from '../Logo/Logo'
+import Logo from "../Logo/Logo";
+import user from "../../assets/images/user.png";
+import check from "../../assets/images/check.png";
 
-
-import "./header.css";
+import "./Header.css";
 
 function Header() {
   return (
-    <div className="App">
-        <header className="header">
-          <Logo />
-          <button>Войти
-            <img className="needle" src={needle}/>
-          </button>
-        </header>
+    <div className="Header">
+      <div className="Header__main">
+        <Logo />
+        <div className="Header__user">
+          <img className="Header__user-img" src={user} />
+          <span>Ivan Ivanov</span>
+          <img className="Header__user-check" src={check} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,86 @@
+.Cabinet__headline {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+  padding-left: 32px;
+}
+
+@media screen and (max-width: 1500px) {
+  .Cabinet__headline {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .Cabinet__headline {
+    padding-left: 5%;
+    margin: 0 auto;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Cabinet__headline {
+    padding-left: 3%;
+  }
+}
+
+.Cabinet__headline-block {
+  width: 150px;
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 670px) {
+  .Cabinet__headline-block {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .Cabinet__headline-block {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Cabinet__headline-block {
+    width: 95px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Cabinet__headline-block {
+    margin-right: 5px;
+  }
+}
+
+.Cabinet__headline-block > img {
+  height: 19px;
+}
+
+@media screen and (max-width: 425px) {
+  .Cabinet__headline-block > img {
+    height: 10px;
+  }
+}
+
+.Cabinet__headline-block > a {
+  width: 103px;
+  height: 25px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #ffd02f;
+  margin-left: 11px;
+}
+
+@media screen and (max-width: 570px) {
+  .Cabinet__headline-block > a {
+    font-size: 16px;
+  }
+}

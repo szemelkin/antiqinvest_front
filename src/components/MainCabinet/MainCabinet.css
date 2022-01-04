@@ -1,0 +1,29 @@
+.MainCabinet {
+  display: flex;
+  flex-direction: column;
+  background: #e5e5e5;
+  padding-top: 50px;
+}
+
+.MainCabinet__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1480px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .as {
+    width: 95%;
+  }
+}
+
+.MarginTop30 {
+    margin-top: 30px;
+}
+
+.MainCabinet__block {
+    display: flex;
+    justify-content: space-between;
+  
+}

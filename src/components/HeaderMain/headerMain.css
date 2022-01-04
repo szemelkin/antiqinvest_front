@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 212px 38px 212px;
+  align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    padding: 38px 100px 38px 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 40px 20px 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    padding: 15px 20px 15px 20px;
+  }
+}
+
+
+.header > button {
+  width: 146px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  .header > button {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    width: 77px;
+  }
+}
+
+.needle {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .needle {
+    display: block;
+  }
+}
