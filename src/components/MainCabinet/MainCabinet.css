@@ -1,13 +1,10 @@
 .MainCabinet {
-  display: flex;
-  flex-direction: column;
-  background: #e5e5e5;
-  padding-top: 50px;
+ 
+
 }
 
 .MainCabinet__wrapper {
-  display: flex;
-  flex-direction: column;
+  max-width: 1480px;
   margin: 0 auto;
 }
 

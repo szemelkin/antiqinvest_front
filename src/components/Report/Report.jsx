@@ -9,7 +9,7 @@ function Report() {
                 <h2>150 000 ₽</h2>
             </div>
 
-            <div className="Report__card-block Report__card2">
+            <div className="Report__card-block Report__block2">
                 <h5>Использованые средства</h5>
                 <h2>200 000 ₽</h2>
             </div>

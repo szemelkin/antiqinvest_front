@@ -2,6 +2,7 @@ import "./MainCabinet.css";
 import CabinetHeadline from "../CabinetHeadline/CabinetHeadline";
 import Products from "../Products/Products";
 import Report from "../Report/Report";
+import Events from "../Events/Events";
 
 function MainCabinet() {
   return (
@@ -13,9 +14,9 @@ function MainCabinet() {
           <Products />
           <div className="MarginBottom20">
           <Report />
-          </div>
-      
+          </div>      
         </div>
+        <Events />
       </div>
     </div>
   );

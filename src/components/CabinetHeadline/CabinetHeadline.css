@@ -6,26 +6,17 @@
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
   border-radius: 24px;
   padding-left: 32px;
-  width: 1480px;
+  max-width: 1480px;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 1500px) {
-  .Cabinet__headline {
-    width: 95%;
-  }
+.marginTop {
+  margin-top: 70px;
 }
 
-@media screen and (max-width: 570px) {
-  .Cabinet__headline {
-    padding-left: 5%;
-    margin: 0 auto;
-    height: 45px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .Cabinet__headline {
-    padding-left: 3%;
+@media screen and (max-width: 768px) {
+  .marginTop {
+    margin-top: 40px;
   }
 }
 

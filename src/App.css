@@ -62,3 +62,19 @@
     padding-left: 20px;
   }
 }
+
+.Cabinet {
+  background: #e5e5e5;
+}
+.MarginFooter {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .MarginFooter {
+    margin-top: 40px;
+  }
+}
+
+
+

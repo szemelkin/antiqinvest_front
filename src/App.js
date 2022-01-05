@@ -9,11 +9,10 @@ import Calm from "./components/Сlaim/Calm";
 import Header from "./components/Header/Header";
 import MainCabinet from "./components/MainCabinet/MainCabinet";
 
-
 function App() {
   return (
     <div className="App">
-    {/*главная страница
+      {/*главная страница
       <div className="image">
         <HeaderMain />
         <Headline />
@@ -24,10 +23,13 @@ function App() {
       <Footer />*/}
 
       {/*страница кабинет*/}
-      <Header />
-      <MainCabinet />
-      <Footer />
-     
+      <div className="Cabinet">
+        <Header />
+        <MainCabinet />
+        <div className="MarginFooter">
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }
