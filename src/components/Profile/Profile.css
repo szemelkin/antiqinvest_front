@@ -1,0 +1,194 @@
+.Profile {
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+  max-width: 1480px;
+  height: 150px;
+}
+
+@media screen and (max-width: 1280px) {
+  .Profile {
+    height: auto;
+  }
+}
+
+.ProfileMargin {
+  margin: 63px 0px 0px 0px;
+}
+
+.Profile__block {
+  padding: 26px 45px 26px 50px;
+  display: flex;
+  height: 150px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .Profile__block {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Profile__block {
+    padding: 20px 20px 26px 20px;
+  }
+}
+
+.Profile__block-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 830px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .Profile__block-main {
+    width: 98%;
+  }
+}
+
+.Profile__block-main > img {
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .Profile__block-main > img {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .Profile__block-main > img {
+        margin-bottom: 20px;
+
+    }
+  }
+  
+
+.Profile__block-include {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .Profile__block-include {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .Profile__block-include {
+      margin-bottom: 20px;
+    }
+  }
+
+.Profile__block-big {
+  display: flex;
+  align-items: center;
+}
+/*
+.Profile__block-big > img {
+  width: 12px;
+  height: 12px;
+
+}*/
+
+.Profile__block-big > h3 {
+  height: 37px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Profile__block-big > h3 {
+    font-size: 22px;
+  }
+}
+
+.Profile__block-include > h4 {
+  width: 112px;
+  height: 15px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 108.8%;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Profile__block-big > h4 {
+    font-size: 12px;
+  }
+}
+
+.Profile__block-include > h5 {
+  height: 27px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #b8b6b6;
+  margin: 0;
+}
+
+.Profile__block-big > h6 {
+  height: 24px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 108.8%;
+  color: #000000;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Profile__block-big > h6 {
+    font-size: 16px;
+  }
+}
+
+.Profile__block > button {
+  justify-content: center;
+  align-items: center;
+  padding: 16px 49px;
+  width: 242px;
+  height: 49.9px;
+  background: #ffd02f;
+  border-radius: 3px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #000000;
+  margin: 0px 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .Profile__block > button {
+    margin-top: 20px;
+  }
+}

@@ -8,6 +8,8 @@ import Calm from "./components/Сlaim/Calm";
 
 import Header from "./components/Header/Header";
 import MainCabinet from "./components/MainCabinet/MainCabinet";
+import CabinetHeadline from "./components/CabinetHeadline/CabinetHeadline";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
@@ -22,13 +24,27 @@ function App() {
       <Calm />
       <Footer />*/}
 
-      {/*страница кабинет*/}
+      {/*страница кабинет
       <div className="Cabinet">
         <Header />
         <MainCabinet />
         <div className="MarginFooter">
           <Footer />
         </div>
+      </div>*/}
+
+      {/*профиль*/}
+      <div className="Profiles">
+        <Header />
+        <div className="Profiles__wrapper">
+        <CabinetHeadline />
+        <Profile />
+
+        </div>
+
+      
+        
+        <Footer />
       </div>
     </div>
   );
