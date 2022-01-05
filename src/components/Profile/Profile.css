@@ -16,6 +16,10 @@
   margin: 63px 0px 0px 0px;
 }
 
+.ProfileMargin2 {
+  margin: 29px 0px 500px 0px;
+}
+
 .Profile__block {
   padding: 26px 45px 26px 50px;
   display: flex;
@@ -53,12 +57,6 @@
   }
 }
 
-.Profile__block-main > img {
-
-
-}
-
-
 @media screen and (max-width: 768px) {
   .Profile__block-main > img {
     width: 72px;
@@ -67,12 +65,10 @@
 }
 
 @media screen and (max-width: 600px) {
-    .Profile__block-main > img {
-        margin-bottom: 20px;
-
-    }
+  .Profile__block-main > img {
+    margin-bottom: 20px;
   }
-  
+}
 
 .Profile__block-include {
   display: flex;
@@ -87,10 +83,10 @@
 }
 
 @media screen and (max-width: 600px) {
-    .Profile__block-include {
-      margin-bottom: 20px;
-    }
+  .Profile__block-include {
+    margin-bottom: 20px;
   }
+}
 
 .Profile__block-big {
   display: flex;
@@ -191,4 +187,74 @@
   .Profile__block > button {
     margin-top: 20px;
   }
+}
+
+/***************************************/
+
+.Profile2 {
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+  max-width: 1480px;
+  height: auto;
+}
+
+.Profile__block2 {
+  padding: 40px 53px 40px 54px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .Profile__block2 {
+        padding: 18px 15px 18px 15px;
+    }
+  }
+
+.Profile__card {
+  width: 324px;
+  height: 97px;
+  background: #f8fbff;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    .Profile__card {
+        width: 100%;
+    }
+  }
+
+.Profile__card-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Profile__card-secondBlock {
+  margin-left: 35px;
+}
+
+.Profile__card-secondBlock > h6 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 108.8%;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+.Profile__card-secondBlock > h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 108.8%;
+  color: #000000;
+  margin: 0;
 }
