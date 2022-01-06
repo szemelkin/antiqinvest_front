@@ -12,9 +12,7 @@ function Investment() {
         <Card />
         <Card />
         <Card />
-
         </div>
-      
     </div>
   );
 }

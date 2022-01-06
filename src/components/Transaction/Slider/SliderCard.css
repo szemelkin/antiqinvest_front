@@ -1,0 +1,110 @@
+
+.Slider__card {
+  width: 474px;
+  height: 413px;
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1550px) {
+  .Slider__card {
+    width: 326px;
+    height: 292px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Slider__card {
+    width: 326px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Slider__card {
+    width: 300px;
+  }
+}
+
+.Slider__card > img {
+  width: 100%;
+}
+
+.Slider__card-main > h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 108.8%;
+  color: #000000;
+  margin: 0px;
+}
+
+@media screen and (max-width: 1550px) {
+  .Slider__card-main > h3 {
+    font-size: 22px;
+  }
+}
+
+.Slider__card-main {
+  margin: 32px 0px 0px 30px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1550px) {
+  .Slider__card-main {
+    margin: 24px 0px 0px 23px;
+  }
+}
+
+
+.Slider__card-block {
+  display: flex;
+  margin-top: 15px;
+}
+
+.Slider__card-main-text {
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 1550px) {
+  .Slider__card-main-text {
+    margin-right: 45px;
+  }
+}
+
+.Slider__card-main-text > h3 {
+  margin: 0;
+  width: 90px;
+  height: 17px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 108.8%;
+  color: #000000;
+}
+
+.Slider__card-main-text > h4 {
+  margin: 0;
+  width: 89px;
+  height: 24px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 108.8%;
+  color: #000000;
+}
+
+@media screen and (max-width: 1550px) {
+  .Slider__card-main-text > h3 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .Slider__card-main-text > h4 {
+    font-size: 17px;
+  }
+}
