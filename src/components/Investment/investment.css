@@ -61,7 +61,7 @@
   width: 100%;
   grid-template-columns: 351px 351px 351px 351px;
   gap: 27px;
-  margin: 68px auto;
+  margin: 68px auto 0 auto;
 }
 
 @media screen and (max-width: 1550px) {

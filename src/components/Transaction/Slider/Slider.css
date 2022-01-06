@@ -8,7 +8,6 @@
   }
 }
 
-
 .Slider {
   display: grid;
   gap: 29px;
@@ -40,4 +39,40 @@
   .Slider {
     width: 300px;
   }
+}
+
+.botton-wrapper {
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+  width: 122px;
+  padding: 0px 25px 0px 25px;
+  height: 55px;
+  right: 110px;
+  top: -60px;
+}
+
+@media screen and (max-width: 1100px) {
+  .buttons {
+    right: 25%;
+    top: 1040px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    right: 0%;
+    top: 1005px;
+  }
+}
+
+.buttons > button {
+  border: 0;
+  background-color: #e5e5e5;
+  cursor: pointer;
 }

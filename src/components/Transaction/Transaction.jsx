@@ -8,14 +8,13 @@ function Transaction() {
       <div className="Transaction__headline">
         <h3>Пример сделок</h3>
         <div className="Transaction__hr">
-          <hr></hr>
-
-        <div className="Transaction__hr-small">
-            <hr></hr>
-        </div>
+          <hr></hr>      
         </div>
       </div>
       <Slider />
+      <div className="Transaction__hr-small">
+            <hr></hr>
+          </div>
     </div>
   );
 }
