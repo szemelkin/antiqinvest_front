@@ -5,34 +5,34 @@
 }
 
 @media screen and (max-width: 1500px) {
-    .Slider {
-      width: 95%;
-    }
+  .Slider {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
-    .Slider {
-      width: 80%;
-    }
+  .Slider {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .Slider {
-      flex-direction: column;
-      max-width: 326px;
-      margin: 30px auto;
-    }
+  .Slider {
+    flex-direction: column;
+    max-width: 326px;
+    margin: 30px auto;
+  }
 }
 
-@media screen and (max-width:425px) {
-    .Slider {
-      width: 100%;
-    }
+@media screen and (max-width: 425px) {
+  .Slider {
+    width: 100%;
+  }
 }
 
 .Slider__card {
   max-width: 474px;
-  height: 375px;
+  height: 413px;
   background: #ffffff;
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -46,41 +46,41 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .Slider__card {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
+  .Slider__card {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    .Slider__card {
-      width: 100%;
-    }
+  .Slider__card {
+    width: 100%;
+  }
 }
-  
+
 .Slider__card > img {
   width: 100%;
 }
 
-.Slider__card > h3 {
+.Slider__card-main > h3 {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
   line-height: 108.8%;
   color: #000000;
-  margin: 32px 0px 20px 0px;
+  margin: 0px;
 }
 
 .Slider__card-main {
-  padding-left: 30px;
-  margin-top: 32px;
+  margin: 32px 0px 0px 30px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 425px) {
-    .Slider__card-main  {
-        padding-left: 23px;
-    }
+  .Slider__card-main {
+    padding-left: 23px;
+  }
 }
 
 .Slider__card-block {
@@ -88,26 +88,36 @@
   margin-top: 15px;
 }
 
-.Slider__card-main > h3 {
-  margin: 0;
-}
-
 .Slider__card-main-text {
   margin-right: 60px;
 }
 
 @media screen and (max-width: 425px) {
-    .Slider__card-main-text {
-        margin-right: 45px;
-    }
+  .Slider__card-main-text {
+    margin-right: 45px;
+  }
 }
-  
 
 .Slider__card-main-text > h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin: 0;
+  width: 90px;
+  height: 17px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 108.8%;
+  color: #000000;
 }
 
 .Slider__card-main-text > h4 {
   margin: 0;
+  width: 89px;
+  height: 24px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 108.8%;
+  color: #000000;
 }

@@ -13,11 +13,7 @@
 }
 
 .ProfileMargin {
-  margin: 63px 0px 0px 0px;
-}
-
-.ProfileMargin2 {
-  margin: 29px 0px 500px 0px;
+  margin-top: 29px;
 }
 
 .Profile__block {
@@ -92,12 +88,6 @@
   display: flex;
   align-items: center;
 }
-/*
-.Profile__block-big > img {
-  width: 12px;
-  height: 12px;
-
-}*/
 
 .Profile__block-big > h3 {
   height: 37px;
@@ -208,10 +198,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .Profile__block2 {
-        padding: 18px 15px 18px 15px;
-    }
+  .Profile__block2 {
+    padding: 18px 15px 18px 15px;
   }
+}
 
 .Profile__card {
   width: 324px;
@@ -224,10 +214,10 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .Profile__card {
-        width: 100%;
-    }
+  .Profile__card {
+    width: 100%;
   }
+}
 
 .Profile__card-wrapper {
   display: flex;

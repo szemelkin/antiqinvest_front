@@ -39,32 +39,24 @@
   }
 }
 
-
-.padding {
-  padding-left: 220px;
-}
-
-@media screen and (max-width: 1440px) {
-  .padding {
-    padding-left: 100px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .padding {
-    padding-left: 40px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .padding {
-    padding-left: 20px;
-  }
-}
-
 .Cabinet {
   background: #e5e5e5;
 }
+
+.marginTop63 {
+  margin: 63px 0px 0px 0px;
+}
+
+.marginTop70 {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .marginTop70 {
+    margin-top: 40px;
+  }
+}
+
 .MarginTop80 {
   margin-top: 80px;
 }
@@ -86,17 +78,27 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .MarginFooter {
-    margin-top: 40px;
-  }
+.marginTop500 {
+  margin-top: 500px;
 }
 
-.Profiles {
+.PaddingTop150 {
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .PaddingTop150 {
+        padding-top: 50px;
+    }
+}
+
+
+
+.Background-wrapper {
   background: #e5e5e5;
 }
 
-.Profiles__wrapper {
+.wrapper {
   max-width: 1480px;
   margin: 0 auto;
   padding: 0px 10px 0px 10px;

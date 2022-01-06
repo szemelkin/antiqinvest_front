@@ -17,41 +17,60 @@ import Report from "./components/Report/Report";
 function App() {
   return (
     <div className="App">
-      {/*главная страница
+      {/*главная страница*/}
       <div className="image">
         <HeaderMain />
         <Headline />
       </div>
-      <Investment />
-      <Transaction />
-      <Calm />
-      <Footer />*/}
-
-      {/*страница кабинет*/}
-      <div className="Profiles">
-        <Header />
-        <MainCabinet />
-        <div className="MarginTop80">
-          <Footer />
+      <div className="Background-wrapper">
+        <div className="PaddingTop150">
+        <Investment />
         </div>
+        
+        <Transaction />
+        <Calm />
       </div>
+      <Footer />
+
+      {/*страница кабинет
+
+      <div className="Background-wrapper">
+        <Header />
+        <div className="wrapper">
+          <div className="marginTop70">
+            <MainCabinet />
+          </div>
+          <div className="MarginTop80">
+            <Footer />
+          </div>
+        </div>
+      </div>*/}
 
       {/*профиль
-      <div className="Profiles">
-        <Header /> 
-        <div className="Profiles__wrapper">
-          <CabinetHeadline />
-          <Profile />
+      <div className="Background-wrapper">
+        <Header />
+        <div className="wrapper">
+          <div className="marginTop70">
+            <CabinetHeadline />
+          </div>
+          <div className="marginTop63">
+            <Profile />
+          </div>
         </div>
-        <Footer />
+        <div className="marginTop500">
+          <Footer />
+        </div>
       </div>*/}
 
       {/*портфель
 
-      <div className="Profiles">
+      <div className="Background-wrapper">
         <Header />
-        <div className="MainCabinet__wrapper">
-          <CabinetHeadline />
+        <div className="wrapper">
+          <div className="marginTop70">
+            <CabinetHeadline />
+          </div>
+
           <div className="MainCabinet__block MarginTop30">
             <Products />
             <div className="MarginBottom20">

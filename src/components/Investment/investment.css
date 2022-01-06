@@ -1,13 +1,35 @@
 .Investment {
-  margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1485px;
 }
 
-@media screen and (max-width: 768px) {
-    .Investment {
-        margin-top: 50px;
+
+@media screen and (max-width: 1550px) {
+    .Investment  {
+      width: 1107px;
     }
-}
+  }
 
+  @media screen and (max-width: 1200px) {
+    .Investment  {
+      width: 730px;
+    }
+  }
+  
+  @media screen and (max-width: 751px) {
+    .Investment  {
+      width: 351px;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .Investment  {
+      width: 95%;
+    }
+  }
+  
 .Investment > h3 {
   font-family: "Gilroy";
   font-style: normal;
@@ -34,3 +56,32 @@
     }
 }
 
+.Cards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 351px 351px 351px 351px;
+  gap: 27px;
+  margin: 68px auto;
+}
+
+@media screen and (max-width: 1550px) {
+  .Cards {
+    grid-template-rows: 411px;
+    grid-template-columns: 351px 351px 351px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Cards {
+    grid-template-rows: 411px 411px;
+    grid-template-columns: 351px 351px;
+  }
+}
+
+@media screen and (max-width: 751px) {
+  .Cards {
+    margin: 31px auto;
+    grid-template-rows: 411px 411px;
+    grid-template-columns: 100%;
+  }
+}

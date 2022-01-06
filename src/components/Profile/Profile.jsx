@@ -6,7 +6,7 @@ import graph from "../../assets/images/graph.png";
 function Profile() {
   return (
     <>
-      <div className="Profile ProfileMargin">
+      <div className="Profile">
         <div className="Profile__block">
           <div className="Profile__block-main">
             <img src={profile} alt="profile" />
@@ -38,7 +38,7 @@ function Profile() {
         </div>
       </div>
 
-      <div className="Profile2 ProfileMargin2">
+      <div className="Profile2 ProfileMargin">
         <div className="Profile__block2">
           <div className="Profile__card">
             <div className="Profile__card-wrapper">
