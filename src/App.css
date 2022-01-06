@@ -36,7 +36,6 @@
 @media screen and (max-width: 425px) {
   .image {
     background-image: url(./assets/images/main-logo425.png);
-   /* height: 838px;*/
   }
 }
 
@@ -66,8 +65,25 @@
 .Cabinet {
   background: #e5e5e5;
 }
-.MarginFooter {
+.MarginTop80 {
   margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .MarginTop80 {
+    margin-top: 50px;
+  }
+}
+
+
+.MarginTop90 {
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .MarginTop90 {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
