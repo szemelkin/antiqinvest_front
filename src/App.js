@@ -14,6 +14,7 @@ import Profile from "./components/Profile/Profile";
 import Lots from "./components/Lots/Lots";
 import Report from "./components/Report/Report";
 import BringMoney from "./components/Modal/BringMoney";
+import BringAmount from "./components/Modal/BringAmount";
 
 function App() {
   return (
@@ -86,9 +87,12 @@ function App() {
         </div>
       </div>*/}
 
-      {/*модальное окно внести сумму */}
+      {/*модальное окно внести сумму 
 
-        <BringMoney />
+        <BringMoney />*/}
+         {/*модальное окно внесение денег */}
+
+        <BringAmount />
 
     </div>
   );

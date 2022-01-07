@@ -1,0 +1,281 @@
+.BringAmount {
+  position: relative;
+  width: 679px;
+  height: 372px;
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+  padding: 24px 33px 35px 38px;
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 680px) {
+  .BringAmount {
+    width: 100%;
+    height: auto;
+    padding: 24px 15px 35px 15px;
+  }
+}
+
+.BringAmount > h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28.8395px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+}
+
+.BringAmount > button {
+  border: 0;
+  background: white;
+  position: absolute;
+  right: 33px;
+}
+
+@media screen and (max-width: 550px) {
+  .BringAmount > button {
+    right: 15px;
+  }
+}
+
+img {
+  cursor: pointer;
+}
+
+.BringAmount__main-block > img {
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+.BringAmount__main-blocks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.bigBlock {
+  width: 172px;
+}
+
+.smallBlock {
+  width: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+  .BringAmount__main-blocks {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .BringAmount__main-blocks {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .BringAmount__main-blocks {
+    height: 200px;
+  }
+}
+
+.BringAmount__main-card-buttonsBlock {
+  width: 305px;
+  justify-content: space-between;
+}
+
+.BringAmount__main-card-block > h4 {
+  margin: 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 108.8%;
+  color: #bbbbbb;
+  text-align: start;
+}
+
+.BringAmount__main-card-block > h5 {
+  margin: 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 108.8%;
+  color: #000000;
+}
+
+.BringAmount__main-card-buttonsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .BringAmount__main-card-buttonsBlock {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .BringAmount__main-card-buttonsBlock {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.BringAmount__main-card-buttonsBlock > button {
+  width: 142px;
+  height: 40px;
+  background: #fff2c5;
+  border-radius: 2.99022px;
+  border: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #6f6f6f;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .BringAmount__main-card-buttonsBlock > button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+#scale {
+
+}
+
+.BringAmount__scale {
+  width: 100%;
+  margin: 52px 0px 32px 0px;
+}
+
+@media screen and (max-width: 550px) {
+    .BringAmount__scale  {
+        margin: 26px 0px 50px 0px;
+    }
+  }
+  
+
+.BringAmount__scale__data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BringAmount__scale__data > h6 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 108.8%;
+  color: #000000;
+  margin: 0;
+}
+
+.BringAmount__scale > input {
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.BringAmount__total {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 550px) {
+  .BringAmount__total {
+    flex-direction: column;
+  }
+}
+
+.BringAmount__total-money {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 550px) {
+  .BringAmount__total-money {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.BringAmount__total-free > h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 104.3%;
+  color: #bbbbbb;
+  text-align: start;
+  margin: 0;
+}
+
+.BringAmount__total-free > h5 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffd02f;
+  margin: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .BringAmount__total-free > h5 {
+    font-size: 24px;
+  }
+}
+
+.BringAmount__total-money > h3 {
+  background: #ebebeb;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 26px;
+  width: 180px;
+  height: 50px;
+  margin: 0;
+  padding: 10px 0px 0px 42px;
+  box-sizing: border-box;
+}
+
+.BringAmount__total > button {
+  width: 180px;
+  height: 50px;
+  border-radius: 3px;
+  border: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  cursor: pointer;
+  background: #ffdb5e;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 550px) {
+  .BringAmount__total > button {
+    width: 100%;
+  }
+}

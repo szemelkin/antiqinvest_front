@@ -12,11 +12,11 @@ function Products() {
         <div className="Products__left-cards MarginBottom18">
           <div className="Products__left-blocks">
             <div className="Products__left-block background">
-              <img src={classic} />
+              <img src={classic} alt="classic"/>
             </div>
             <div className="Products__left-card-block bigBlock">
               <h4>Продукт</h4>
-              <h5>Классический <img src={i} /></h5>
+              <h5>Классический <img src={i} alt="info"/></h5>
             </div>
             <div className="Products__left-card-block smallBlock">
               <h4>Сумма</h4>
@@ -41,11 +41,11 @@ function Products() {
         <div className="Products__left-cards MarginBottom18">
           <div className="Products__left-blocks">
             <div className="Products__left-block background">
-              <img src={classic} />
+              <img src={classic} alt="classic" />
             </div>
             <div className="Products__left-card-block bigBlock">
               <h4>Продукт</h4>
-              <h5>Классический <img src={i} /></h5>
+              <h5>Классический <img src={i} alt="i" /></h5>
             </div>
             <div className="Products__left-card-block smallBlock">
               <h4>Сумма</h4>
