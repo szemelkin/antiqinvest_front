@@ -13,11 +13,12 @@ import CabinetHeadline from "./components/CabinetHeadline/CabinetHeadline";
 import Profile from "./components/Profile/Profile";
 import Lots from "./components/Lots/Lots";
 import Report from "./components/Report/Report";
+import BringMoney from "./components/Modal/BringMoney";
 
 function App() {
   return (
     <div className="App">
-      {/*главная страница*/}
+      {/*главная страница
       <div className="image">
         <HeaderMain />
         <Headline />
@@ -30,7 +31,7 @@ function App() {
         <Transaction />
         <Calm />
       </div>
-      <Footer />
+      <Footer />*/}
 
       {/*страница кабинет
 
@@ -84,6 +85,11 @@ function App() {
           <Footer />
         </div>
       </div>*/}
+
+      {/*модальное окно внести сумму */}
+
+        <BringMoney />
+
     </div>
   );
 }

@@ -5,12 +5,12 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="Footer">
+    <footer className="Footer">
         <div>
             <Logo />
         </div>
        
-    </div>
+    </footer>
   );
 }
 
