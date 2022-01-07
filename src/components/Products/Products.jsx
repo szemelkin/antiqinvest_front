@@ -11,6 +11,8 @@ function Products() {
         <ProductsCard />
         <div className="Products__right-card"></div>
       </div>
+
+   
     </div>
   );
 }

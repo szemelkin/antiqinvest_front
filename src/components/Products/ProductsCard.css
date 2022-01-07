@@ -73,7 +73,6 @@
   justify-content: space-between;
 }
 
-
 .ProductsCard-block > h4 {
   margin: 0;
   font-family: "Gilroy";
@@ -91,7 +90,6 @@
   }
 }
 
-
 .ProductsCard-block > h5 {
   margin: 0;
   font-family: "Gilroy";
@@ -103,13 +101,11 @@
   text-align: left;
 }
 
-
 @media screen and (max-width: 374px) {
   .ProductsCard-block > h5 {
     font-size: 18px;
   }
 }
-
 
 .ProductsCard-buttonsBlock {
   display: flex;
@@ -154,3 +150,6 @@
     margin-bottom: 15px;
   }
 }
+
+
+

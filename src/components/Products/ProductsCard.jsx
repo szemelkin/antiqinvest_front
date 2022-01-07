@@ -1,4 +1,5 @@
 import "./ProductsCard.css";
+import "../../App.css";
 import "../../index.css";
 import classic from "../../assets/images/classic.png";
 import i from "../../assets/images/i.png";
@@ -12,7 +13,7 @@ function ProductsCard() {
         </div>
         <div className="ProductsCard-block bigBlock">
           <h4>Продукт</h4>
-          <h5>
+          <h5 className="notification" data-name="Продукт Классический Фиксированный доход 2% в месяц">
             Классический <img src={i} alt="info" />
           </h5>
         </div>
