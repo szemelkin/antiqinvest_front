@@ -1,4 +1,5 @@
 import "./Lots.css";
+import "../../index.css"
 import clock from "../../assets/images/clock.png";
 
 function Lots() {

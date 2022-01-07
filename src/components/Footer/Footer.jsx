@@ -1,4 +1,5 @@
 import Logo from "../Logo/Logo";
+import "../../index.css"
 import "./Footer.css";
 
 

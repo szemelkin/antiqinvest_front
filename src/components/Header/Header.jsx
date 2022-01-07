@@ -1,4 +1,5 @@
 import Logo from "../Logo/Logo";
+import "../../index.css"
 import user from "../../assets/images/user.png";
 import check from "../../assets/images/check.png";
 

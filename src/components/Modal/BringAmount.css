@@ -157,11 +157,49 @@ img {
     margin-bottom: 15px;
   }
 }
-
+/*позунок */
 #scale {
-
+    -webkit-appearance: none;
+    border: 2px solid #FFD02F;
+    width: 100%;
+    height: 11px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    background: -webkit-linear-gradient(left, #FFD02F 0%, #FFD02F 50%, #D0D0D0 50%, #D0D0D0 100%);
+    outline: none;
 }
 
+#scale::-moz-range-track{
+    -moz-appearance: none;
+    border: 2px solid #FFD02F;
+    width: 100%;
+    height: 11px;
+    background: -moz-linear-gradient(left, #FFD02F 0%, #FFD02F 50%, #D0D0D0 50%, #D0D0D0 100%);
+    outline: none;
+}
+
+
+#scale::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #FFD02F;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#scale::-moz-range-thumb {
+    -moz-appearance: none;
+    background: #FFD02F;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+
+/*позунок */
 .BringAmount__scale {
   width: 100%;
   margin: 52px 0px 32px 0px;

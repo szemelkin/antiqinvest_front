@@ -1,4 +1,5 @@
 import "./headline.css";
+import "../../index.css"
 
 function Headline() {
   return (

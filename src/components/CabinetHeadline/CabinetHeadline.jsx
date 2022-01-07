@@ -1,4 +1,5 @@
 import "./CabinetHeadline.css";
+import "../../index.css"
 import people from "../../assets/images/people.png";
 import info from "../../assets/images/info.png";
 import briefcase from "../../assets/images/briefcase.png";

@@ -1,4 +1,5 @@
 import "./Card.css";
+import "../../../index.css"
 import computer from "../../../assets/images/comp.png";
 
 function Card() {

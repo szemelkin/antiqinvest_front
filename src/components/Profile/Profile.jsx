@@ -1,4 +1,5 @@
 import "./Profile.css";
+import "../../index.css"
 import profile from "../../assets/images/profile.png";
 import pencel from "../../assets/images/pencel.png";
 import graph from "../../assets/images/graph.png";

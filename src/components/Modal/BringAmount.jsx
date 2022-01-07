@@ -1,9 +1,16 @@
+import React from 'react';
+import "../../index.css"
 import "./BringAmount.css";
 import cross from "../../assets/images/x.png";
 import classic from "../../assets/images/classic.png";
 import i from "../../assets/images/i.png";
 
 function BringAmount() {
+
+    function onChange (event) {
+        console.log(event.target.value)
+    }
+
   return (
     <div className="BringAmount">
       <button>
@@ -36,7 +43,7 @@ function BringAmount() {
           <h6>75 000 ₽</h6>
         </div>
 
-        <input id="scale" type="range" min="0" max="100" step="1" />
+        <input id="scale" type="range" min="0" max="100" step="1" onChange={onChange} />
       </div>
 
       <div className="BringAmount__total">

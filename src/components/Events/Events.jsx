@@ -1,4 +1,5 @@
 import "./Events.css";
+import "../../index.css"
 import clock from "../../assets/images/clock.png";
 
 function Events() {

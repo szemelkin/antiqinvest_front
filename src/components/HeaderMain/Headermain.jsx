@@ -1,5 +1,6 @@
 import needle from "../../assets/images/botton-needle.png";
 import Logo from '../Logo/Logo'
+import "../../index.css"
 
 
 import "./headerMain.css";

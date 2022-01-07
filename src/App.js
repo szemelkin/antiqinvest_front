@@ -34,7 +34,7 @@ function App() {
       </div>
       <Footer />*/}
 
-      {/*страница кабинет
+      {/*страница кабинет*/}
 
       <div className="Background-wrapper">
         <Header />
@@ -46,7 +46,7 @@ function App() {
             <Footer />
           </div>
         </div>
-      </div>*/}
+      </div>
 
       {/*профиль
       <div className="Background-wrapper">
@@ -90,9 +90,11 @@ function App() {
       {/*модальное окно внести сумму 
 
         <BringMoney />*/}
-         {/*модальное окно внесение денег */}
 
-        <BringAmount />
+
+         {/*модальное окно внесение денег 
+
+        <BringAmount />*/}
 
     </div>
   );

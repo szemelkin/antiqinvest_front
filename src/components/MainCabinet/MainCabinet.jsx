@@ -1,4 +1,5 @@
 import "./MainCabinet.css";
+import "../../index.css"
 import CabinetHeadline from "../CabinetHeadline/CabinetHeadline";
 import Products from "../Products/Products";
 import Report from "../Report/Report";

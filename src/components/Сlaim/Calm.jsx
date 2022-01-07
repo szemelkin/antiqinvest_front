@@ -1,4 +1,6 @@
 import "./Calm.css";
+import "../../index.css"
+
 
 function Calm() {
   return (

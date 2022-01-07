@@ -1,4 +1,5 @@
 import "./BringMoney.css";
+import "../../index.css"
 import cross from '../../assets/images/x.png'
 
 

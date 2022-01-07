@@ -1,4 +1,5 @@
 import "./investment.css";
+import "../../index.css"
 import Card from './Card/Card'
 
 
