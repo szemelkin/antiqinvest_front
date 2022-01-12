@@ -16,6 +16,9 @@ import Report from "./components/Report/Report";
 import BringMoney from "./components/Modal/BringMoney";
 import BringAmount from "./components/Modal/BringAmount";
 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Cabinet from "./components/Cabinet";
+
 function App() {
   return (
     <div className="App">
@@ -26,16 +29,18 @@ function App() {
       </div>
       <div className="Background-wrapper">
         <div className="PaddingTop150">
-        <Investment />
+          <Investment />
         </div>
-        
+
         <Transaction />
         <Calm />
       </div>
       <Footer />*/}
 
-      {/*страница кабинет
-      <div className="Background-wrapper">
+      {/*страница кабинет*/}
+
+      <Cabinet />
+     {/* <div className="Background-wrapper">
         <Header />
         <div className="wrapper">
           <div className="marginTop70">
@@ -46,7 +51,6 @@ function App() {
           </div>
         </div>
       </div>*/}
-
 
       {/*профиль
       <div className="Background-wrapper">
@@ -64,7 +68,7 @@ function App() {
         </div>
       </div>*/}
 
-      {/*портфель*/}
+      {/*портфель
 
       <div className="Background-wrapper">
         <Header />
@@ -85,17 +89,15 @@ function App() {
         <div className="MarginTop90">
           <Footer />
         </div>
-      </div>
+      </div>*/}
 
       {/*модальное окно внести сумму 
 
         <BringMoney />*/}
 
-
-         {/*модальное окно внесение денег 
+      {/*модальное окно внесение денег 
 
         <BringAmount />*/}
-
     </div>
   );
 }

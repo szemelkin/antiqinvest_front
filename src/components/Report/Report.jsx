@@ -2,7 +2,7 @@ import "./Report.css";
 
 function Report() {
   return (
-    <div className="Report">
+   <div className="Report">
         <div className="Report__card">
             <div className="Report__card-block">
                 <h5>Свободные средства</h5>
@@ -16,7 +16,6 @@ function Report() {
             <button>Пополнить</button>
             <button>Вывести</button>
         </div>
- 
 
     </div>
   );

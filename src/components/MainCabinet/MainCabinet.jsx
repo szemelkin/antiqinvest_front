@@ -10,14 +10,14 @@ function MainCabinet() {
     <div className="MainCabinet">
       <div className="MainCabinet__wrapper">
         <CabinetHeadline />
-
+{/*
         <div className="MainCabinet__block MarginTop30">
           <Products />
           <div className="MarginBottom20">
           <Report />
           </div>      
         </div>
-        <Events />
+        <Events />*/}
       </div>
     </div>
   );
