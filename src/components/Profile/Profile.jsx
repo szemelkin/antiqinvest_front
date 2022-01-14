@@ -4,7 +4,14 @@ import profile from "../../assets/images/profile.png";
 import pencel from "../../assets/images/pencel.png";
 import graph from "../../assets/images/graph.png";
 
+import { useState } from "react";
+import ChangePassword from "../Modal/ChangePassword";
+
+
+
 function Profile() {
+  const [PasswordActive, SetPasswordActive] = useState(false);
+
   return (
     <>
       <div className="Profile">
@@ -35,7 +42,7 @@ function Profile() {
               </div>
             </div>
           </div>
-          <button>Сменить пароль</button>
+          <button onClick={() => SetPasswordActive(true)}>Сменить пароль</button>
         </div>
       </div>
 
@@ -80,6 +87,7 @@ function Profile() {
           </div>
         </div>
       </div>
+      <ChangePassword PasswordActive={PasswordActive} SetPasswordActive={SetPasswordActive}/>
     </>
   );
 }

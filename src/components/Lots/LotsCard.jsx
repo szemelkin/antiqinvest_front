@@ -2,7 +2,9 @@ import "./LotsCard.css";
 import "../../index.css"
 import clock from "../../assets/images/clock.png";
 
-function LotsCard() {
+function LotsCard({modalActive, setModalActive}) {
+
+
   return (
       <div className="Lots__block">
         <div className="Lots__list">
@@ -31,7 +33,7 @@ function LotsCard() {
 
         <div className="Lots-card-buttonsBlock">
           <button>Вывести</button>
-          <button>Внести</button>
+          <button onClick={() => setModalActive(true)} >Внести</button>
         </div>
       </div>
 

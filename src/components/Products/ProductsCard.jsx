@@ -5,7 +5,7 @@ import classic from "../../assets/images/classic.png";
 import i from "../../assets/images/i.png";
 
 
-function ProductsCard({modalActive, setModalActive}) {
+function ProductsCard({setModalActive}) {
   return (
     <>
     <div className="ProductsCard MarginBottom18">

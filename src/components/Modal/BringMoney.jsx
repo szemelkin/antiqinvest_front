@@ -7,6 +7,8 @@ import BringAmount from "../Modal/BringAmount";
 function BringMoney({ modalActive, setModalActive }) {
   const [modalBringAmount, setModalBringAmount] = useState(false);
 
+  
+
   function closeModal(modalBringAmount) {
     if (modalBringAmount) {
       setModalActive(false);

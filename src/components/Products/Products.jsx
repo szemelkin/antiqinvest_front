@@ -4,12 +4,14 @@ import ProductsCard from "./ProductsCard";
 import BringMoney from './../Modal/BringMoney'
 import { useState } from "react";
 
+import Profile from "../Modal/ChangePassword"
+
 function Products() {
   const [modalActive, setModalActive] = useState(false)
 
 
   return (
-      <div className="Products">
+    <>     <div className="Products">
         <div className="Products__left MarginBottom18">
           <ProductsCard  setModalActive={setModalActive}/>
           <ProductsCard setModalActive={setModalActive}/>
@@ -18,6 +20,8 @@ function Products() {
           <div className="Products__right-card"></div>
         </div>
       </div>
+    </>
+ 
   );
 }
 
