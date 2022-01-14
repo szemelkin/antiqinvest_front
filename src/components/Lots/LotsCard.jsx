@@ -34,7 +34,7 @@ function LotsCard({setModalActive, img, lot, status, capital, payment }) {
 
         <div className="Lots-card-buttonsBlock">
           <button>Вывести</button>
-          <button onClick={() => setModalActive(false)}>Внести</button>
+          <button onClick={() => setModalActive(true)}>Внести</button>
         </div>
       </div>
       <hr></hr>

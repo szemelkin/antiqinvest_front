@@ -4,9 +4,13 @@ import LotsCard from "./LotsCard";
 import { useState } from "react";
 import BringMoney from "../Modal/BringMoney";
 import clock from "../../assets/images/clock.png";
+import event from "../Api"
 
-function Lots() {
+function Lots(event) {
   const [modalActive, setModalActive] = useState(false);
+
+console.log(event)
+
 
   const lots = [
     {
@@ -78,7 +82,7 @@ function Lots() {
               key={index}
               modalActive={modalActive}
               setModalActive={setModalActive}
-              img={item.img}
+             img={item.img}
               lot={item.lot}
               status={item.status}
               capital={item.capital}
