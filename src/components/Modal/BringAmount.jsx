@@ -1,20 +1,27 @@
-import React from 'react';
-import "../../index.css"
+import React from "react";
+import { useState } from "react";
+
+import "../../index.css";
 import "./BringAmount.css";
+import "./BringMoney.css";
 import cross from "../../assets/images/x.png";
 import classic from "../../assets/images/classic.png";
 import i from "../../assets/images/i.png";
 
-function BringAmount() {
+function BringAmount({modalBringAmount, setModalBringAmount}) {
+  
+  const [inputValue, setInputValue] = useState(37500);
 
-    function onChange (event) {
-        console.log(event.target.value)
-    }
+  function rangeValue(event) {
+    const target = (event.target.value)*750;
+    setInputValue(target);
+  }
+
 
   return (
-    <div className="BringAmount">
+    <div className={modalBringAmount ? "BringAmount" : "BringAmountNone"}>
       <button>
-        <img src={cross} alt="cross" />
+        <img src={cross} alt="cross" onClick={() => setModalBringAmount(false)}/>
       </button>
       <h3>Внести сумму</h3>
 
@@ -43,7 +50,14 @@ function BringAmount() {
           <h6>75 000 ₽</h6>
         </div>
 
-        <input id="scale" type="range" min="0" max="100" step="1" onChange={onChange} />
+        <input
+          id="scale"
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          onChange={rangeValue}
+        />
       </div>
 
       <div className="BringAmount__total">
@@ -52,9 +66,9 @@ function BringAmount() {
             <h4>Свободные средства</h4>
             <h5>150 000 ₽</h5>
           </div>
-          <h3>75 000 ₽</h3>
+          <h3>{inputValue} ₽</h3>
         </div>
-        <button>Внести</button>
+        <button onClick={() => setModalBringAmount(false)}>Внести</button>
       </div>
     </div>
   );

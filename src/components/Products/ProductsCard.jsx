@@ -4,8 +4,10 @@ import "../../index.css";
 import classic from "../../assets/images/classic.png";
 import i from "../../assets/images/i.png";
 
-function ProductsCard() {
+
+function ProductsCard({modalActive, setModalActive}) {
   return (
+    <>
     <div className="ProductsCard MarginBottom18">
       <div className="ProductsCard__blocks">
         <div className="ProductsCard-block background">
@@ -33,9 +35,11 @@ function ProductsCard() {
 
       <div className="ProductsCard-buttonsBlock">
         <button>Вывести</button>
-        <button>Внести</button>
+        <button onClick={() => setModalActive(true)}>Внести</button>
       </div>
     </div>
+
+    </>
   );
 }
 
