@@ -1,16 +1,34 @@
 import "./Profile.css";
-import "../../index.css"
+import "../../index.css";
 import profile from "../../assets/images/profile.png";
 import pencel from "../../assets/images/pencel.png";
 import graph from "../../assets/images/graph.png";
+import ProfleCard from "./ProfileCard";
 
 import { useState } from "react";
 import ChangePassword from "../Modal/ChangePassword";
 
-
-
 function Profile() {
   const [PasswordActive, SetPasswordActive] = useState(false);
+
+  const pk = [
+    {
+      title: "Актиные лоты",
+      data: 25,
+    },
+    {
+      title: "Количество вложений",
+      data: 25,
+    },
+    {
+      title: "Инвестировано",
+      data: "250 000 ₽",
+    },
+    {
+      title: "Общая доходность",
+      data: "375 000 ₽",
+    },
+  ];
 
   return (
     <>
@@ -42,52 +60,25 @@ function Profile() {
               </div>
             </div>
           </div>
-          <button onClick={() => SetPasswordActive(true)}>Сменить пароль</button>
+          <button onClick={() => SetPasswordActive(true)}>
+            Сменить пароль
+          </button>
         </div>
       </div>
 
       <div className="Profile2 ProfileMargin">
         <div className="Profile__block2">
-          <div className="Profile__card">
-            <div className="Profile__card-wrapper">
-              <img src={graph} alt="graph"/>
-              <div className="Profile__card-secondBlock">
-                <h6>Актиные лоты</h6>
-                <h3>25</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="Profile__card">
-          <div className="Profile__card-wrapper">
-              <img src={graph} alt="graph"/>
-              <div className="Profile__card-secondBlock">
-                <h6>Количество вложений</h6>
-                <h3>25</h3>
-              </div>
-            </div>
-          </div>
-          <div className="Profile__card">
-          <div className="Profile__card-wrapper">
-              <img src={graph} alt="graph"/>
-              <div className="Profile__card-secondBlock">
-                <h6>Инвестировано</h6>
-                <h3>250 000 ₽</h3>
-              </div>
-            </div>
-          </div>
-          <div className="Profile__card">
-          <div className="Profile__card-wrapper">
-              <img src={graph} alt="graph"/>
-              <div className="Profile__card-secondBlock">
-                <h6>Общая доходность</h6>
-                <h3>375 000 ₽</h3>
-              </div>
-            </div>
-          </div>
+          {pk.map((item, index) => {
+            return (
+              <ProfleCard key={index} title={item.title} data={item.data} />
+            );
+          })}
         </div>
       </div>
-      <ChangePassword PasswordActive={PasswordActive} SetPasswordActive={SetPasswordActive}/>
+      <ChangePassword
+        PasswordActive={PasswordActive}
+        SetPasswordActive={SetPasswordActive}
+      />
     </>
   );
 }
