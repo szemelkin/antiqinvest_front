@@ -23,6 +23,7 @@
 .Transaction__headline {
   display: flex;
   width: 1480px;
+  margin-bottom: 68px;
 }
 
 @media screen and (max-width: 1550px) {

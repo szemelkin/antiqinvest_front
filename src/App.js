@@ -22,7 +22,7 @@ import Cabinet from "./components/Cabinet";
 function App() {
   return (
     <div className="App">
-      {/*главная страница
+      {/*главная страница*/}
       <div className="image">
         <HeaderMain />
         <Headline />
@@ -35,11 +35,11 @@ function App() {
         <Transaction />
         <Calm />
       </div>
-      <Footer />*/}
+      <Footer />
 
-      {/*страница кабинет*/}
+      {/*страница кабинет
 
-      <Cabinet />
+      <Cabinet />*/}
      {/* <div className="Background-wrapper">
         <Header />
         <div className="wrapper">

@@ -5,18 +5,14 @@
   background: #ffffff;
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  margin: 15px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1550px) {
   .Slider__card {
     width: 326px;
     height: 292px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .Slider__card {
-    width: 326px;
   }
 }
 
@@ -30,6 +26,9 @@
   width: 100%;
 }
 
+
+
+
 .Slider__card-main > h3 {
   font-family: "Gilroy";
   font-style: normal;
@@ -40,22 +39,23 @@
   margin: 0px;
 }
 
+.Slider__card-main {
+  margin: 32px 0px 0px 23px;
+
+}
+
+@media screen and (max-width: 1630px) {
+  .Slider__card-main {
+    margin: 24px 0px 0px 23px;
+  }
+}
+
 @media screen and (max-width: 1550px) {
   .Slider__card-main > h3 {
     font-size: 22px;
   }
 }
 
-.Slider__card-main {
-  margin: 32px 0px 0px 30px;
-  padding-bottom: 20px;
-}
-
-@media screen and (max-width: 1550px) {
-  .Slider__card-main {
-    margin: 24px 0px 0px 23px;
-  }
-}
 
 
 .Slider__card-block {
