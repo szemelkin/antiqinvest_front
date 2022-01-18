@@ -1,17 +1,14 @@
 import "./Card.css";
-import "../../../index.css"
+import "../../../index.css";
 import computer from "../../../assets/images/comp.png";
 
-function Card() {
+function Card({ service, description }) {
   return (
     <>
       <div className="Card">
         <img src={computer} />
-        <h4>Онлайн</h4>
-        <span>
-          Работа полностью онлайн. Зачисление и вывод денег онлайн. Срок вывода
-          денег 5 дней
-        </span>
+        <h4>{service}</h4>
+        <span>{description}</span>
       </div>
     </>
   );
