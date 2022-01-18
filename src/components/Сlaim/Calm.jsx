@@ -8,7 +8,7 @@ function Calm() {
       <div className="Calm__wrapper">
         <h3>Хочу тоже инвестировать в антиквариат</h3>
 
-        <form>
+        <form className="Calm__form">
           <input type="tel"  placeholder="+7 (___) ___-__-__"></input>
           <button>Отправить</button>
         </form>

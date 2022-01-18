@@ -1,33 +1,42 @@
-
-.Slider__card {
-  width: 474px;
-  height: 413px;
-  background: #ffffff;
-  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin: 15px;
+.slider__wraper {
+  width: 534px;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1550px) {
-  .Slider__card {
+@media screen and (max-width: 1630px) {
+  .slider__wraper {
     width: 326px;
-    height: 292px;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .Slider__card {
-    width: 300px;
+@media screen and (max-width: 767px) {
+  .slider__wraper {
+    margin-bottom: 20px;
+    width: 326px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slider__wraper {
+    margin-bottom: 20px;
+    width: 100%
+  }
+}
+
+.Slider__card-main {
+  margin: 32px 0px 0px 23px;
+  
+}
+
+@media screen and (max-width: 1630px) {
+  .Slider__card-main {
+    margin: 24px 0px 0px 23px;
   }
 }
 
 .Slider__card > img {
   width: 100%;
 }
-
-
-
 
 .Slider__card-main > h3 {
   font-family: "Gilroy";
@@ -39,24 +48,11 @@
   margin: 0px;
 }
 
-.Slider__card-main {
-  margin: 32px 0px 0px 23px;
-
-}
-
-@media screen and (max-width: 1630px) {
-  .Slider__card-main {
-    margin: 24px 0px 0px 23px;
-  }
-}
-
 @media screen and (max-width: 1550px) {
   .Slider__card-main > h3 {
     font-size: 22px;
   }
 }
-
-
 
 .Slider__card-block {
   display: flex;

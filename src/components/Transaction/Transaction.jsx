@@ -6,7 +6,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-function Transaction() {
+
+
+
+
+function Transaction(props) {
+
   return (
     <>
       <div className="Transaction">
