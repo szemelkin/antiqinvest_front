@@ -11,8 +11,10 @@ function Headline() {
       </h3>
 
       <div className="headline__block">
-        <button>Войти</button>
-        <a>Подробнее</a>
+      <a href="/cabinet">
+        <button className="headline__button">Войти</button>
+        </a>
+        <a className="headline__link">Подробнее</a>
       </div>
     </div>
   );

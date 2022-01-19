@@ -18,29 +18,32 @@ import BringAmount from "./components/Modal/BringAmount";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Cabinet from "./components/Cabinet";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      {/*главная страница*/}
-      <div className="image">
-        <HeaderMain />
-        <Headline />
-      </div>
-      <div className="Background-wrapper">
-        <div className="PaddingTop150">
-          <Investment />
-        </div>
 
-        <Transaction />
-        <Calm />
-      </div>
-      <Footer />
+
+ 
+
+     
+      {/*главная страница*/}
+      <Router>
+        <Link to="/"></Link>
+        <Link to="/cabinet"></Link>
+        <Link to="/cabinet/profile"></Link>
+        <Link to="/cabinet/briefcase"></Link>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/cabinet" component={Cabinet} />
+        <Route exact path="/cabinet/profile" component={Cabinet} />
+        <Route exact path="/cabinet/briefcase" component={Cabinet} />
+      </Router>
 
       {/*страница кабинет
 
       <Cabinet />*/}
-     {/* <div className="Background-wrapper">
+      {/* <div className="Background-wrapper">
         <Header />
         <div className="wrapper">
           <div className="marginTop70">
@@ -98,6 +101,7 @@ function App() {
       {/*модальное окно внесение денег 
 
         <BringAmount />*/}
+  
     </div>
   );
 }

@@ -2,23 +2,29 @@ import needle from "../../assets/images/botton-needle.png";
 import Logo from "../Logo/Logo";
 import "../../index.css";
 import "./headerMain.css";
+import Cabinet from "../Cabinet";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Cabinet from "../Cabinet";
 
 function HeaderMain() {
   return (
-    <div className="App">
-      <header className="header">
-        <Logo />
-   
-          <button className="header__button">
-            Войти
+    <Router>
+      <div className="App">
+        <header className="header">
+          <Logo />
+          <a href="/cabinet">
+            <button className="header__button">Войти </button>
             <img className="needle" src={needle} />
-          </button>
-     
-      </header>
-    </div>
+          </a>
+        </header>
+      </div>
+
+    
+        <Route path="/cabinet">
+          <Cabinet />
+        </Route>
+
+    </Router>
   );
 }
 

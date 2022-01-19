@@ -10,7 +10,7 @@ function Cabinet() {
       <Header />
       <div className="wrapper">
         <div className="marginTop70">
-          <MainCabinet />
+         <MainCabinet />
         </div>
         <div className="MarginTop80"></div>
       </div>

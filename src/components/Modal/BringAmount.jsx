@@ -19,7 +19,8 @@ function BringAmount({modalBringAmount, setModalBringAmount}) {
 
 
   return (
-    <div className={modalBringAmount ? "BringAmount" : "BringAmountNone"}>
+    <div className={modalBringAmount ? "ModalActive" : "ModalActiveDeactive"}>
+      <div className="BringAmount">
       <button>
         <img src={cross} alt="cross" onClick={() => setModalBringAmount(false)}/>
       </button>
@@ -71,6 +72,8 @@ function BringAmount({modalBringAmount, setModalBringAmount}) {
         <button onClick={() => setModalBringAmount(false)}>Внести</button>
       </div>
     </div>
+      </div>
+
   );
 }
 

@@ -6,39 +6,39 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .headline {
-        margin-top: 150px;
-        padding-left: 100px;
-    }
+  .headline {
+    margin-top: 150px;
+    padding-left: 100px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .headline {
-        margin-top: 50px;
-        padding-bottom: 20px;
-    }
+  .headline {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .headline {
-        margin-top: 70px;
-        padding-left: 40px;
-        width: 50%;
-    }
+  .headline {
+    margin-top: 70px;
+    padding-left: 40px;
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 446px) {
-    .headline {
-        width: 90%;
-    }
+  .headline {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    .headline {
-        margin-top: 460px;
-        padding-left: 20px;
-        width: 300px;
-    }
+  .headline {
+    margin-top: 460px;
+    padding-left: 20px;
+    width: 300px;
+  }
 }
 
 .headline > h1 {
@@ -53,12 +53,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .headline > h1 {
-        font-size: 35px;
-        line-height: 43px;
-    }
+  .headline > h1 {
+    font-size: 35px;
+    line-height: 43px;
+  }
 }
-
 
 .headline > h3 {
   font-family: "Gilroy";
@@ -71,13 +70,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .headline > h3 {
-        font-size: 16px;
-        line-height: 19px;
-        margin: 18px 0px 30px 0px;
-    }
+  .headline > h3 {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 18px 0px 30px 0px;
+  }
 }
-
 
 .headline__block {
   display: flex;
@@ -87,14 +85,13 @@
 }
 
 @media screen and (max-width: 500px) {
-    .headline__block {
-     width: 95%;
-    }
+  .headline__block {
+    width: 95%;
+  }
 }
 
-
-.headline__block > button {
-  font-family: "Ubuntu";
+.headline__button {
+  /* font-family: "Ubuntu";*/
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -110,16 +107,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .headline__block > button {
-     width: 163px;
-     height: 44px;
-     font-size: 18px;
-     line-height: 21px;
-    }
+  .headline__button {
+    width: 163px;
+    height: 44px;
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
-.headline__block > a {
-  font-family: "Ubuntu";
+.headline__link {
+  /* font-family: "Ubuntu";*/
   font-style: normal;
   font-weight: 500;
   font-size: 23.9673px;
@@ -130,8 +127,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .headline__block > a {
-        font-size: 18px;
-        line-height: 21px;
-    }
+  .headline__link {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }

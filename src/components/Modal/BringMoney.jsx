@@ -7,8 +7,6 @@ import BringAmount from "../Modal/BringAmount";
 function BringMoney({ modalActive, setModalActive }) {
   const [modalBringAmount, setModalBringAmount] = useState(false);
 
-  
-
   function closeModal(modalBringAmount) {
     if (modalBringAmount) {
       setModalActive(false);
@@ -19,8 +17,9 @@ function BringMoney({ modalActive, setModalActive }) {
 
   return (
     <>
-      <div className={modalActive ? "BringMoney" : "BringMoneyNone"}>
-        <button onClick={() => setModalActive(false)}>
+      <div className={modalActive ? "ModalActive" : "ModalActiveDeactive"}>
+        <div className="BringMoney">
+                <button onClick={() => setModalActive(false)}>
           <img src={cross} alt="cross" />
         </button>
         <h3>Внести сумму</h3>
@@ -30,6 +29,8 @@ function BringMoney({ modalActive, setModalActive }) {
           <button onClick={() => setModalBringAmount(true)}>Внести</button>
           <button onClick={() => setModalActive(false)}>Отмена</button>
         </div>
+        </div>
+  
       </div>
       <BringAmount
         modalBringAmount={modalBringAmount}
