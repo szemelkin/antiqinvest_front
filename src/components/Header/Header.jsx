@@ -3,7 +3,7 @@ import "../../index.css"
 import user from "../../assets/images/user.png";
 import check from "../../assets/images/check.png";
 
-import "./Header.css";
+import "./header.css";
 
 function Header() {
   return (
