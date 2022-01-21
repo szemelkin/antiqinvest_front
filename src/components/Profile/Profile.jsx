@@ -36,7 +36,7 @@ function Profile() {
 
 
 
-console.log(PasswordActive)
+
   const pk = [
     {
       title: "Актиные лоты",
