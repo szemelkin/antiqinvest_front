@@ -10,32 +10,6 @@ import ChangePassword from "../Modal/ChangePassword";
 
 function Profile() {
   const [PasswordActive, SetPasswordActive] = useState(false);
-/*
-  const [passwordForm, setPasswordFrom] = useState("");
-  const [newPasswordForm, setnewPasswordForm] = useState("");
-
-  console.log("пароль старый", passwordForm);
-  console.log("пароль новый", newPasswordForm);
-
-  function sendForm(e) {
-    e.preventDefault();
-    if (passwordForm !== newPasswordForm) {
-      alert("пароли не совпадают");
-    } else {
-      SetPasswordActive(false);
-      console.log("пароли совпадают");
-    }
-  }
-  function clear() {
-    if (PasswordActive) {
-      setPasswordFrom("");
-      setnewPasswordForm("");
-    }
-  }
-*/
-
-
-
 
   const pk = [
     {

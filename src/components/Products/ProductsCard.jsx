@@ -12,6 +12,15 @@ function ProductsCard({
   profit,
   payment,
 }) {
+  function takeOut() {
+    console.log("Вывести");
+  }
+
+  let conversionPayment = payment
+    .toString()
+    .replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + " ");
+
+
   return (
     <>
       <div className="ProductsCard MarginBottom18">
@@ -35,12 +44,15 @@ function ProductsCard({
           </div>
           <div className="ProductsCard-block">
             <h4>Внесено</h4>
-            <h5>{payment} Р</h5>
+            <h5>{conversionPayment} Р</h5>
           </div>
         </div>
 
         <div className="ProductsCard-buttonsBlock">
-          <button>Вывести</button>
+          <button onClick={takeOut} disabled={payment === 0}>
+            {" "}
+            Вывести
+          </button>
           <button onClick={() => setModalActive(true)}>Внести</button>
         </div>
       </div>

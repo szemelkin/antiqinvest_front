@@ -9,9 +9,6 @@ import event from "../Api"
 function Lots(event) {
   const [modalActive, setModalActive] = useState(false);
 
-console.log(event)
-
-
   const lots = [
     {
       img: clock,

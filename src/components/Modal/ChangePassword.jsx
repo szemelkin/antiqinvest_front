@@ -3,35 +3,31 @@ import "./ChangePassword.css";
 import "../../index.css";
 import cross from "../../assets/images/x.png";
 
-function ChangePassword({
-  PasswordActive,
-  SetPasswordActive,
-}) {
-  
+function ChangePassword({ PasswordActive, SetPasswordActive }) {
   const [passwordForm, setPasswordFrom] = useState("");
   const [newPasswordForm, setnewPasswordForm] = useState("");
+  const [buttonDisabled, setButtonDisabled] = useState(false);
 
-  const passwordRef = useRef()
-  const newPasswordRef = useRef()
+  const passwordRef = useRef();
+  const newPasswordRef = useRef();
 
-  function clearForm () {
-    passwordRef.current.value = ''
-    newPasswordRef.current.value = ''
+  function clearForm() {
+    passwordRef.current.value = "";
+    newPasswordRef.current.value = "";
   }
 
-
-  function sendForm(e) {
-    e.preventDefault();
+  function sendForm(event) {
+    event.preventDefault();
     if (passwordForm !== newPasswordForm) {
+      console.log(passwordForm.length)
       alert("пароли не совпадают");
-      clearForm()
+      clearForm();
     } else {
       SetPasswordActive(false);
-      clearForm()
+      clearForm();
       console.log("пароли совпадают");
     }
   }
-
 
 
   return (
@@ -61,12 +57,15 @@ function ChangePassword({
               <input
                 ref={newPasswordRef}
                 onChange={(event) => setnewPasswordForm(event.target.value)}
-                type="password"
                 name="newPassword"
                 placeholder="******"
               ></input>
             </div>
-            <button className="Password__saveButton" type="submit">
+            <button
+              className="Password__saveButton"
+              type="submit"
+              disabled={buttonDisabled}
+            >
               Сохранить пароль
             </button>
           </form>
@@ -77,3 +76,7 @@ function ChangePassword({
 }
 
 export default ChangePassword;
+
+/*
+      setButtonDisabled(event.target.value === "");
+      */

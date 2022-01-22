@@ -139,11 +139,21 @@
   text-align: center;
   letter-spacing: 0.005em;
   color: #6f6f6f;
+  background: #FFDB5E;
   flex: none;
   order: 0;
   flex-grow: 0;
   cursor: pointer;
 }
+
+
+.ProductsCard-buttonsBlock > button:disabled {
+  background: #FFF2C5;
+  cursor: default;
+}
+
+
+
 
 @media screen and (max-width: 425px) {
   .ProductsCard-buttonsBlock > button {

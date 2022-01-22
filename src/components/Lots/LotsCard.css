@@ -207,11 +207,18 @@
     text-align: center;
     letter-spacing: 0.005em;
     color: #6f6f6f;
+    background: #FFD02F;
     flex: none;
     order: 0;
     flex-grow: 0;
     cursor: pointer;
   }
+
+  .Lots-card-buttonsBlock > button:disabled {
+    background: #E4E4E4;
+    cursor: default;
+  }
+
   
   @media screen and (max-width: 425px) {
     .Lots-card-buttonsBlock > button {

@@ -59,3 +59,8 @@
     cursor: pointer;
     margin-bottom: 14px;
 }
+
+.Report__card > button:disabled {
+  background: #E4E4E4;
+  cursor: default;
+}

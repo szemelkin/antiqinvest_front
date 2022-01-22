@@ -1,9 +1,11 @@
+import React, { useState } from "react";
 import "./LotsCard.css";
 import "../../index.css";
 
 
-function LotsCard({setModalActive, img, lot, status, capital, payment }) {
 
+function LotsCard({setModalActive, img, lot, status, capital, payment }) {
+  const [buttonDisabled, setButtonDisabled] = useState(true);
   
   return (
     <>
@@ -33,7 +35,7 @@ function LotsCard({setModalActive, img, lot, status, capital, payment }) {
         </div>
 
         <div className="Lots-card-buttonsBlock">
-          <button>Вывести</button>
+          <button disabled={buttonDisabled}>Вывести</button>
           <button onClick={() => setModalActive(true)}>Внести</button>
         </div>
       </div>

@@ -17,7 +17,7 @@ function Products() {
       product: "Классический",
       sum: "75 000",
       profit: "10 000",
-      payment: "2 000",
+      payment: 2000,
     },
     {
       img: trade,
@@ -26,7 +26,7 @@ function Products() {
       product: "Трейдерский",
       sum: "75 000",
       profit: "10 000",
-      payment: "0",
+      payment: 0,
     },
     {
       img: vabank,
@@ -34,7 +34,7 @@ function Products() {
       product: "Ва-банк",
       sum: "75 000",
       profit: "10 000",
-      payment: "0",
+      payment: 0,
     },
   ];
 
