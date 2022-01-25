@@ -16,7 +16,7 @@ function Lots(event) {
       product: "Классический",
       status: "Завершён",
       capital: "75 000",
-      payment: "75 000",
+      payment: 75000,
       profit: "10 000",
     },
     {
@@ -25,7 +25,7 @@ function Lots(event) {
       product: "Трейдерский",
       status: "В работе",
       capital: "75 000",
-      payment: "75 000",
+      payment: 75000,
       profit: "10 000",
     },
     {
@@ -34,7 +34,7 @@ function Lots(event) {
       product: "Ва-банк",
       status: "В работе",
       capital: "75 000",
-      payment: "75 000",
+      payment: 75000,
       profit: "10 000",
     },
     {
@@ -43,17 +43,7 @@ function Lots(event) {
       product: "Классический",
       status: "В работе",
       capital: "75 000",
-      payment: "75 000",
-      profit: "10 000",
-    },
-
-    {
-      img: clock,
-      lot: "Антикварные часы",
-      product: "Классический",
-      status: "В работе",
-      capital: "75 000",
-      payment: "75 000",
+      payment: 75000,
       profit: "10 000",
     },
 
@@ -63,7 +53,17 @@ function Lots(event) {
       product: "Классический",
       status: "В работе",
       capital: "75 000",
-      payment: "75 000",
+      payment: 0,
+      profit: "10 000",
+    },
+
+    {
+      img: clock,
+      lot: "Антикварные часы",
+      product: "Классический",
+      status: "В работе",
+      capital: "75 000",
+      payment: 0,
       profit: "10 000",
     },
   ];

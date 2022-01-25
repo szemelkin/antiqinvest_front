@@ -6,6 +6,11 @@ import "../../index.css";
 
 function LotsCard({setModalActive, img, lot, status, capital, payment }) {
   const [buttonDisabled, setButtonDisabled] = useState(true);
+
+    let conversionPayment = payment
+    .toString()
+    .replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + " ");
+
   
   return (
     <>
@@ -30,12 +35,12 @@ function LotsCard({setModalActive, img, lot, status, capital, payment }) {
 
           <div className="Lots__lot width">
             <h6>Свободные</h6>
-            <h3>{payment} ₽</h3>
+            <h3>{conversionPayment} ₽</h3>
           </div>
         </div>
 
         <div className="Lots-card-buttonsBlock">
-          <button disabled={buttonDisabled}>Вывести</button>
+          <button disabled={payment === 0}>Вывести</button>
           <button onClick={() => setModalActive(true)}>Внести</button>
         </div>
       </div>

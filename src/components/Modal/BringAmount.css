@@ -43,7 +43,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: bold;
-  font-size: 28.8395px;
+  font-size: 29px;
   line-height: 36px;
   color: #000000;
   margin: 0;
@@ -156,7 +156,7 @@ img {
   width: 142px;
   height: 40px;
   background: #fff2c5;
-  border-radius: 2.99022px;
+  border-radius: 3px;
   border: 0;
   font-family: "Ubuntu";
   font-style: normal;
@@ -177,17 +177,15 @@ img {
     margin-bottom: 15px;
   }
 }
-/*позунок */
+
+/*****************позунок*************************************/
+
 #scale {
     -webkit-appearance: none;
     border: 2px solid #FFD02F;
     width: 100%;
     height: 11px;
-    border-bottom-left-radius: 11px;
-    border-bottom-right-radius: 11px;
-    border-top-left-radius: 11px;
-    border-top-right-radius: 11px;
-    background: -webkit-linear-gradient(left, #FFD02F 0%, #FFD02F 50%, #D0D0D0 50%, #D0D0D0 100%);
+    border-radius: 11px;
     outline: none;
 }
 
@@ -196,7 +194,7 @@ img {
     border: 2px solid #FFD02F;
     width: 100%;
     height: 11px;
-    background: -moz-linear-gradient(left, #FFD02F 0%, #FFD02F 50%, #D0D0D0 50%, #D0D0D0 100%);
+   /* background: -moz-linear-gradient(left, #FFD02F 0%, #FFD02F 50%, #D0D0D0 50%, #D0D0D0 100%);*/
     outline: none;
 }
 
@@ -242,7 +240,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
-  line-height: 108.8%;
+  line-height: 109%;
   color: #000000;
   margin: 0;
 }
@@ -282,7 +280,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 104.3%;
+  line-height: 104%;
   color: #bbbbbb;
   text-align: start;
   margin: 0;
@@ -337,3 +335,9 @@ img {
     width: 100%;
   }
 }
+
+.BringAmount__total > button:disabled {
+  background: #FFF2C5;
+  cursor: default;
+}
+
