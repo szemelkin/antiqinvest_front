@@ -19,26 +19,28 @@ import BringAmount from "./components/Modal/BringAmount";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Cabinet from "./components/Cabinet";
 import Home from "./components/Home";
+import Context from "./Context";
 
 function App() {
+  const free = 150000;
+  const use = 200000;
+  const value = { free, use };
+
   return (
     <div className="App">
-
-
- 
-
-     
       {/*главная страница*/}
-      <Router>
-        <Link to="/"></Link>
-        <Link to="/cabinet"></Link>
-        <Link to="/cabinet/profile"></Link>
-        <Link to="/cabinet/briefcase"></Link>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/cabinet" component={Cabinet} />
-        <Route exact path="/cabinet/profile" component={Cabinet} />
-        <Route exact path="/cabinet/briefcase" component={Cabinet} />
-      </Router>
+      <Context.Provider value={value}>
+        <Router>
+          <Link to="/"></Link>
+          <Link to="/cabinet"></Link>
+          <Link to="/cabinet/profile"></Link>
+          <Link to="/cabinet/briefcase"></Link>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/cabinet" component={Cabinet} />
+          <Route exact path="/cabinet/profile" component={Cabinet} />
+          <Route exact path="/cabinet/briefcase" component={Cabinet} />
+        </Router>
+      </Context.Provider>
 
       {/*страница кабинет
 
@@ -101,7 +103,6 @@ function App() {
       {/*модальное окно внесение денег 
 
         <BringAmount />*/}
-  
     </div>
   );
 }

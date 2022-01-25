@@ -14,6 +14,9 @@ import { Switch, Route, NavLink } from "react-router-dom";
 
 
 function CabinetHeadline() {
+  const free = 150000;
+  const use = 200000;
+
 
   return (
     <>
@@ -69,7 +72,7 @@ function CabinetHeadline() {
               <div className="MainCabinet__block MarginTop30">
                 <Products />
                 <div className="MarginBottom20">
-                  <Report />
+                  <Report/>
                 </div>
               </div>
              <Lots />

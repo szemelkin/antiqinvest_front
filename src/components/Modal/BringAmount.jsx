@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useContext } from "react";
+import Context from '../../Context'
 
 import "../../index.css";
 import "./BringAmount.css";
@@ -11,6 +11,7 @@ import i from "../../assets/images/i.png";
 
 function BringAmount({ modalBringAmount, setModalBringAmount }) {
   const [inputValue, setInputValue] = useState(37500);
+  const value = useContext(Context)
 
   let inputRange = inputValue / 750;
 
@@ -18,6 +19,13 @@ function BringAmount({ modalBringAmount, setModalBringAmount }) {
     const target = event.target.value * 750;
     setInputValue(target);
   }
+
+
+
+
+  let conversionFree = value.free
+  .toString()
+  .replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + " ");
 
 
   return (
@@ -39,7 +47,7 @@ function BringAmount({ modalBringAmount, setModalBringAmount }) {
           <div className="BringAmount__main-card-block bigBlock">
             <h4>Продукт</h4>
             <h5>
-              Классический <img src={i} />
+              Классический <img src={i} alt="question"/>
             </h5>
           </div>
           <div className="BringAmount__main-card-block smallBlock">
@@ -74,7 +82,7 @@ function BringAmount({ modalBringAmount, setModalBringAmount }) {
           <div className="BringAmount__total-money">
             <div className="BringAmount__total-free">
               <h4>Свободные средства</h4>
-              <h5>150 000 ₽</h5>
+              <h5>{conversionFree} ₽</h5>
             </div>
             <h3>{inputValue} ₽</h3>
           </div>
