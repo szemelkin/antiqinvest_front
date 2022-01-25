@@ -1,4 +1,6 @@
 import "./App.css";
+import { free, use, event, investmentCard, lots, productData, productCard } from "./Api";
+
 import Footer from "./components/Footer/Footer";
 import HeaderMain from "./components/HeaderMain/Headermain";
 import Headline from "./components/Headline/Headline";
@@ -22,9 +24,9 @@ import Home from "./components/Home";
 import Context from "./Context";
 
 function App() {
-  const free = 150000;
-  const use = 200000;
-  const value = { free, use };
+  const value = { free, use, event, investmentCard, lots, productData, productCard};
+
+ 
 
   return (
     <div className="App">

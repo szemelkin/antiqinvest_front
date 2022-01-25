@@ -4,31 +4,14 @@ import profile from "../../assets/images/profile.png";
 import pencel from "../../assets/images/pencel.png";
 import graph from "../../assets/images/graph.png";
 import ProfleCard from "./ProfileCard";
-
-import { useState } from "react";
 import ChangePassword from "../Modal/ChangePassword";
+import React, { useState, useContext } from "react";
+import Context from "../../Context";
 
 function Profile() {
   const [PasswordActive, SetPasswordActive] = useState(false);
 
-  const pk = [
-    {
-      title: "Актиные лоты",
-      data: 25,
-    },
-    {
-      title: "Количество вложений",
-      data: 25,
-    },
-    {
-      title: "Инвестировано",
-      data: "250 000 ₽",
-    },
-    {
-      title: "Общая доходность",
-      data: "375 000 ₽",
-    },
-  ];
+  const value = useContext(Context);
 
   return (
     <>
@@ -68,7 +51,7 @@ function Profile() {
 
       <div className="Profile2 ProfileMargin">
         <div className="Profile__block2">
-          {pk.map((item, index) => {
+          {value.productCard.map((item, index) => {
             return (
               <ProfleCard key={index} title={item.title} data={item.data} />
             );
@@ -76,7 +59,6 @@ function Profile() {
         </div>
       </div>
       <ChangePassword
-
         PasswordActive={PasswordActive}
         SetPasswordActive={SetPasswordActive}
       />
