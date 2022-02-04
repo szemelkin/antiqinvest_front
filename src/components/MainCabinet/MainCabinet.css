@@ -18,6 +18,10 @@
   margin-bottom: 20px;
 }
 
+.MarginBottom50 {
+  margin-bottom: 50px;
+}
+
 .MainCabinet__block {
     display: flex;
     justify-content: space-between;
