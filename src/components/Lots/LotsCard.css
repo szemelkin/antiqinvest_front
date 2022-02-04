@@ -201,7 +201,7 @@ hr {
   flex-grow: 0;
 }
 
-.Lots-card-buttonsBlock > button:first-child {
+.Lots-card-buttonsBlock > button {
   width: 150px;
   height: 40px;
   background: #e4e4e4;
@@ -212,7 +212,7 @@ hr {
 
 }
 
-.Lots-card-buttonsBlock > button:last-child {
+.Lots-card-buttonsBlock > a > button {
   width: 194px;
   height: 40px;
   color: #6f6f6f;
@@ -228,14 +228,14 @@ hr {
 }
 
 @media screen and (max-width: 425px) {
-  .Lots-card-buttonsBlock > button:first-child {
+  .Lots-card-buttonsBlock > button {
     width: 100%;
     margin-bottom: 15px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .Lots-card-buttonsBlock > button:last-child {
+  .Lots-card-buttonsBlock > a > button {
     width: 100%;
     margin-bottom: 15px;
   }

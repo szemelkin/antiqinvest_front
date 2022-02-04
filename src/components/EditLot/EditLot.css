@@ -1,0 +1,112 @@
+.EditLot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+  padding: 25px 88px 25px 40px;
+  max-width: 1480px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1330px) {
+  .EditLot {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .EditLot {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.EditLot__block {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 560px) {
+  .EditLot__block {
+    width: 100%;
+  }
+}
+
+.EditLot__block > img {
+  width: 13px;
+  height: 7px;
+}
+
+.EditLot__block > h6 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #d6d6d6;
+  margin: 0px 106px 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .EditLot__block > h6 {
+        margin: 0px 50px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .EditLot__block > h6 {
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+
+.EditLot__block > h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 109%;
+  color: #000000;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .EditLot__block > h4 {
+        font-size: 18px;
+    }
+  }
+
+.EditLot > button {
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #6f6f6f;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
+  width: 194px;
+  height: 44px;
+  color: #6f6f6f;
+  background: #ffd02f;
+  box-sizing: border-box;
+  border: 0;
+}
+
+@media screen and (max-width: 560px) {
+  .EditLot > button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

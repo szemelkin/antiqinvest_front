@@ -22,6 +22,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Cabinet from "./components/Cabinet";
 import CabinetTraider from "./components/CabinetTraider";
 import Home from "./components/Home";
+import EditTrader from "./components/EditTrader"
 import Context from "./Context";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route exact path="/cabinet" component={CabinetTraider} />
           <Route exact path="/cabinet/lots" component={CabinetTraider} />
           <Route exact path="/cabinet/briefcase" component={CabinetTraider} />
+          <Route exact path="/cabinet/cabinet/lots/edit" component={EditTrader} />
         </Router>
       </Context.Provider>
 
