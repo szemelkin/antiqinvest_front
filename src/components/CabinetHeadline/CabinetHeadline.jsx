@@ -25,36 +25,21 @@ function CabinetHeadline() {
 
         <li className="Cabinet__block">
           <img src={info} />
-          <NavLink exact to="/cabinet/profile">
-            Профиль
+          <NavLink exact to="/cabinet/briefcase">
+            Портфель
           </NavLink>
         </li>
 
         <li className="Cabinet__block">
           <img src={briefcase} />
-          <NavLink exact to="/cabinet/briefcase">
-            Портфель
+          <NavLink exact to="/cabinet/lots">
+            Все лоты
           </NavLink>
         </li>
       </ul>
       <div>
         <Route
           path="/cabinet"
-          exact
-          render={() => (
-            <>
-              <div className="MainCabinet__block MarginTop30">
-                <Products />
-                <div className="MarginBottom20">
-                  <Report />
-                </div>
-              </div>
-              <Events />
-            </>
-          )}
-        />
-        <Route
-          path="/cabinet/profile"
           exact
           render={() => (
             <>
@@ -76,7 +61,20 @@ function CabinetHeadline() {
                   <Report />
                 </div>
               </div>
-              <Lots />
+              <Events />
+            </>
+          )}
+        />
+        <Route
+          path="/cabinet/lots"
+          exact
+          render={() => (
+            <>
+              <div className="MainCabinet__block MarginTop30">
+                <div className="MarginBottom20">
+                  <Lots />
+                </div>
+              </div>
             </>
           )}
         />

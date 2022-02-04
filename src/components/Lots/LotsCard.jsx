@@ -38,11 +38,6 @@ function LotsCard({setModalActive, img, lot, status, capital, payment }) {
             <h3>{conversionPayment} ₽</h3>
           </div>
         </div>
-
-        <div className="Lots-card-buttonsBlock">
-          <button disabled={payment === 0}>Вывести</button>
-          <button onClick={() => setModalActive(true)}>Внести</button>
-        </div>
       </div>
       <hr></hr>
     </>

@@ -35,11 +35,11 @@ function App() {
         <Router>
           <Link to="/"></Link>
           <Link to="/cabinet"></Link>
-          <Link to="/cabinet/profile"></Link>
+          <Link to="/cabinet/lots"></Link>
           <Link to="/cabinet/briefcase"></Link>
           <Route exact path="/" component={Home} />
           <Route exact path="/cabinet" component={Cabinet} />
-          <Route exact path="/cabinet/profile" component={Cabinet} />
+          <Route exact path="/cabinet/lots" component={Cabinet} />
           <Route exact path="/cabinet/briefcase" component={Cabinet} />
         </Router>
       </Context.Provider>

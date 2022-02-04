@@ -1,10 +1,16 @@
 .Lots {
-  width: 100%;
+  width: 1480px;
   background: #ffffff;
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
   border-radius: 14px;
-  padding: 28px 102px 28px 40px;
+  padding: 28px 40px 28px 40px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1500px) {
+  .Lots {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1330px) {
