@@ -13,41 +13,40 @@
 }
 
 @media screen and (max-width: 1330px) {
-    .search  {
-        padding: 20px;
+  .search {
+    padding: 20px;
   }
 }
-
 
 @media screen and (max-width: 560px) {
-    .search  {
-   flex-direction: column;
-   height: auto;
+  .search {
+    flex-direction: column;
+    height: auto;
   }
 }
-
-
 
 .search__block {
   display: flex;
   width: 70%;
 }
 
-
 @media screen and (max-width: 560px) {
-    .search__block {
+  .search__block {
     width: 100%;
   }
 }
 
 .search__block > img {
-    margin: 5px 10px 0px;
-    width: 19px;
-    height: 19px;
+  margin: 5px 10px 0px;
+  width: 19px;
+  height: 19px;
 }
 
 .search__block > input {
-  border: 0;
+  outline: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   width: 95%;
   height: 25px;
   font-family: "Gilroy";
@@ -57,6 +56,8 @@
   line-height: 32px;
   color: #d0d0d0;
   padding-left: 12px;
+  border-color: #bdbdbd;
+  border-width: 1px;
 }
 
 .search > button {
@@ -81,7 +82,7 @@
 }
 
 @media screen and (max-width: 560px) {
-    .search > button {
+  .search > button {
     width: 100%;
     margin-top: 10px;
   }
