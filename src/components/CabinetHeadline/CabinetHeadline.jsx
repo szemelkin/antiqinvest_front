@@ -18,7 +18,7 @@ function CabinetHeadline() {
       <ul className="Cabinet">
         <li className="Cabinet__block">
           <img src={people} />
-          <NavLink exact to="/cabinet/">
+          <NavLink exact to="/cabinet">
             Кабинет
           </NavLink>
         </li>
