@@ -7,8 +7,10 @@ function EditLot() {
   return (
     <div className="EditLot">
       <div className="EditLot__block">
-        <img src={back} />
-        <h6>Назад</h6>
+        <a href="/cabinet/lots">
+          <img src={back} />
+          <h6>Назад</h6>
+        </a>
         <h4>Редактировать лот</h4>
       </div>
       <button>Сохранить</button>

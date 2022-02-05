@@ -39,7 +39,7 @@ function LotsCard({setModalActive, img, lot, status, capital, payment }) {
           </div>
         </div>
       </div>
-      <hr></hr>
+      <hr className="Lots__lot-hr"></hr>
     </>
   );
 }

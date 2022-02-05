@@ -241,6 +241,6 @@ hr {
   }
 }
 
-hr:last-child {
+.Lots__lot-hr:last-child {
   display: none;
 }
