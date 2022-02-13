@@ -1,0 +1,84 @@
+
+.AboutLot__capital-list {
+    margin-top: 34px;
+  }
+  
+  .capital-list-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    flex-wrap: wrap;
+  }
+  
+  .capital-list-headline > h4 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 109%;
+    color: #bbbbbb;
+    margin: 0;
+    width: 178px;
+  }
+  
+  .capital-list-headline > h4:first-child {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 109%;
+    color: #bbbbbb;
+    margin: 0;
+    width: 200px;
+  }
+  
+  .capital-list-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 15px 0px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .capital-list-list > h4 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    width: 178px;
+    text-align: start;
+    margin: 0;
+  }
+  
+  .capital-list-block {
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+  
+  .capital-list-block > img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  
+  .capital-list-block > h4 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    width: 178px;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .AboutLot-hr {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    margin: 0;
+  }

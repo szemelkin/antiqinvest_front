@@ -1,5 +1,14 @@
 import "./App.css";
-import { free, use, event, investmentCard, lots, productData, productCard } from "./Api";
+import {
+  free,
+  use,
+  event,
+  investmentCard,
+  lots,
+  productData,
+  productCard,
+  allusers,
+} from "./Api";
 
 import Footer from "./components/Footer/Footer";
 import HeaderMain from "./components/HeaderMain/Headermain";
@@ -21,14 +30,22 @@ import BringAmount from "./components/Modal/BringAmount";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Cabinet from "./components/Cabinet";
 import CabinetTraider from "./components/CabinetTraider";
+import AdminCabinet from "./components/AdminCabinet";
 import Home from "./components/Home";
-import EditTrader from "./components/EditTrader"
+import EditTrader from "./components/EditTrader";
 import Context from "./Context";
 
 function App() {
-  const value = { free, use, event, investmentCard, lots, productData, productCard};
-
- 
+  const value = {
+    free,
+    use,
+    event,
+    investmentCard,
+    lots,
+    productData,
+    productCard,
+    allusers,
+  };
 
   return (
     <div className="App">
@@ -37,19 +54,37 @@ function App() {
         <Router>
           <Link to="/"></Link>
           <Link to="/cabinet"></Link>
+          <Link to="/cabinetadmin"></Link>
           <Link to="/cabinet/lots"></Link>
           <Link to="/cabinet/briefcase"></Link>
-         {/* пользователь
+       
+          {/* пользователь
          <Route exact path="/" component={Home} />
           <Route exact path="/cabinet" component={Cabinet} />
           <Route exact path="/cabinet/lots" component={Cabinet} />
           <Route exact path="/cabinet/briefcase" component={Cabinet} />*/}
-      {/*трейдер*/}
+          {/*трейдер
           <Route exact path="/" component={Home} />
           <Route exact path="/cabinet" component={CabinetTraider} />
           <Route exact path="/cabinet/lots" component={CabinetTraider} />
           <Route exact path="/cabinet/briefcase" component={CabinetTraider} />
-          <Route exact path="/cabinet/cabinet/lots/edit" component={EditTrader} />
+          <Route
+            exact
+            path="/cabinet/cabinet/lots/edit"
+            component={EditTrader}
+          />*/}
+
+          {/*админка*/}
+          <Route exact path="/" component={Home} />
+          <Route exact path="/cabinetadmin" component={AdminCabinet} />
+          <Route exact path="/cabinetadmin/alllots" component={AdminCabinet} />
+          <Route exact path="/cabinetadmin/allusers" component={AdminCabinet} />
+          <Route exact path="/cabinetadmin/allbriefcase" component={AdminCabinet} />
+          <Route exact path="/cabinetadmin/allpropducts" component={AdminCabinet} />
+        {/*  <Route
+            exact
+            path="/cabinet/cabinetadmin/lots/edit"
+        component={EditTrader} />*/}
         </Router>
       </Context.Provider>
 

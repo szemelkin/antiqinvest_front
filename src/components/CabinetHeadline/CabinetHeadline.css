@@ -79,3 +79,8 @@
     font-size: 16px;
   }
 }
+
+.AdminCabinet__block {
+  width: 230px;
+  margin-right: 60px;
+}

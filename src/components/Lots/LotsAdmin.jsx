@@ -1,21 +1,21 @@
 import "./Lots.css";
 import "../../index.css";
-import LotsCardTraider from "./LotsCardTraider";
+import LotsCardAdmin from "./LostCardAdmin";
 import BringMoney from "../Modal/BringMoney";
 import React, { useState, useContext } from "react";
 import Context from "../../Context";
 
-function LotsTraider(event) {
+function LotsAdmin(event) {
   const [modalActive, setModalActive] = useState(false);
   const value = useContext(Context);
 
   return (
     <>
       <div className="Lots">
-        <h3>Все пользователи</h3>
+        <h3>Все лоты</h3>
         {value.lots.map((item, index) => {
           return (
-            <LotsCardTraider
+            <LotsCardAdmin
               key={index}
               modalActive={modalActive}
               setModalActive={setModalActive}
@@ -33,4 +33,4 @@ function LotsTraider(event) {
   );
 }
 
-export default LotsTraider;
+export default LotsAdmin;
