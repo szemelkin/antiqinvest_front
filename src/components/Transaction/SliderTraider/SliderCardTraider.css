@@ -1,0 +1,28 @@
+.sliderTraider__wraper {
+  width: 328px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1630px) {
+  .sliderTraider__wraper {
+    width: 326px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sliderTraider__wraper {
+    margin-bottom: 20px;
+    width: 326px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sliderTraider__wraper {
+    margin-bottom: 20px;
+    width: 100%
+  }
+}
+
+.sliderTraider__wraper > img {
+  width: 100%;
+}

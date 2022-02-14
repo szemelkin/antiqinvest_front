@@ -1,17 +1,11 @@
 import "./Transaction.css";
 import "../../App.css";
 import Slider from "./Slider/Slider";
-import SimpleSlider from "./Slider/Slider2";
+import SimpleSlider from "./Slider/SimpleSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-
-
-
-
 function Transaction(props) {
-
   return (
     <>
       <div className="Transaction">

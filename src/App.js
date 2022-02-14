@@ -47,7 +47,6 @@ function App() {
     allusers,
   };
 
-
   return (
     <div className="App">
       {/*главная страница*/}
@@ -59,24 +58,28 @@ function App() {
           <Link to="/cabinet/briefcase"></Link>
           <Link to="/cabinetraider"></Link>
           <Link to="/cabinetadmin"></Link>
-       
-          {/* пользователь
+
+          {/* пользователь*/}
          <Route exact path="/" component={Home} />
           <Route exact path="/cabinet" component={Cabinet} />
           <Route exact path="/cabinet/lots" component={Cabinet} />
-          <Route exact path="/cabinet/briefcase" component={Cabinet} />*/}
-          {/*трейдер
+          <Route exact path="/cabinet/briefcase" component={Cabinet} />
+          {/*трейдер*/}
           <Route exact path="/" component={Home} />
           <Route exact path="/cabinetraider" component={CabinetTraider} />
           <Route exact path="/cabinetraider/lots" component={CabinetTraider} />
-          <Route exact path="/cabinetraider/briefcase" component={CabinetTraider} />
           <Route
             exact
-            path="/cabinet/cabinet/lots/edit"
+            path="/cabinetraider/briefcase"
+            component={CabinetTraider}
+          />
+          <Route
+            exact
+            path="/cabinetraider/lots/edit"
             component={EditTrader}
-          />*/}
+          />
 
-          {/*админка*/}
+          {/*админка
           <Route exact path="/" component={Home} />
           <Route exact path="/cabinetadmin" component={AdminCabinet} />
           <Route exact path="/cabinetadmin/alllots" component={AdminCabinet} />
@@ -86,71 +89,9 @@ function App() {
        <Route
             exact
             path="/cabinet/cabinetadmin/lots/edit"
-        component={EditTrader} />
+        component={EditTrader} />*/}
         </Router>
       </Context.Provider>
-
-      {/*страница кабинет
-
-      <Cabinet />*/}
-      {/* <div className="Background-wrapper">
-        <Header />
-        <div className="wrapper">
-          <div className="marginTop70">
-            <MainCabinet />
-          </div>
-          <div className="MarginTop80">
-            <Footer />
-          </div>
-        </div>
-      </div>*/}
-
-      {/*профиль
-      <div className="Background-wrapper">
-        <Header />
-        <div className="wrapper">
-          <div className="marginTop70">
-            <CabinetHeadline />
-          </div>
-          <div className="marginTop63">
-            <Profile />
-          </div>
-        </div>
-        <div className="marginTop500">
-          <Footer />
-        </div>
-      </div>*/}
-
-      {/*портфель
-
-      <div className="Background-wrapper">
-        <Header />
-        <div className="wrapper">
-          <div className="marginTop70">
-            <CabinetHeadline />
-          </div>
-
-          <div className="MainCabinet__block MarginTop30">
-            <Products />
-            <div className="MarginBottom20">
-              <Report />
-            </div>
-          </div>
-
-          <Lots />
-        </div>
-        <div className="MarginTop90">
-          <Footer />
-        </div>
-      </div>*/}
-
-      {/*модальное окно внести сумму 
-
-        <BringMoney />*/}
-
-      {/*модальное окно внесение денег 
-
-        <BringAmount />*/}
     </div>
   );
 }

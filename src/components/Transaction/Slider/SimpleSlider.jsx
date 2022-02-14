@@ -2,11 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import SliderCard from "./SliderCard";
 
-import "./Slider.css";
-import "./SliderCard.css";
+
 import buttonRight from "../../../assets/images/button-right.png";
 import buttonLeft from "../../../assets/images/button-left.png";
-
 import clock from "../../../assets/images/slider-image1920.png";
 import tableware from "../../../assets/images/tableware.png";
 import gramophone from "../../../assets/images/gramophone.png";
@@ -95,14 +93,15 @@ export default function SimpleSlider() {
     <>
       <Slider {...settings}>
         {sliderData.map((item, index) => {
-          return <SliderCard          
-          key={index} 
-          img={item.img}
-          lot={item.lot}
-          capital={item.capital}
-          profit={item.profit}
-          
-          />;
+          return (
+            <SliderCard
+              key={index}
+              img={item.img}
+              lot={item.lot}
+              capital={item.capital}
+              profit={item.profit}
+            />
+          );
         })}
       </Slider>
     </>

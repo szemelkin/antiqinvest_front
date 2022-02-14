@@ -104,3 +104,12 @@
     font-size: 17px;
   }
 }
+
+.slider__wraperTraider {
+  width: 368px;
+  box-sizing: border-box;
+}
+
+.slider__wraperTraider > img {
+  width: 100%;
+}

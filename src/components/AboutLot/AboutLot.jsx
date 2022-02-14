@@ -8,6 +8,8 @@ import pencel from "../../assets/images/pencel.png";
 import profile from "../../assets/images/profile.png";
 import LotTable from "./LotTable";
 import tick from "../../assets/images/tick.png";
+import SliderTraider from "../Transaction/SliderTraider/SliderTraider";
+import SimpleSliderTraider from "../Transaction/SliderTraider/SimpleSliderTraider";
 
 function AboutLot() {
   return (
@@ -17,26 +19,10 @@ function AboutLot() {
           <h3 className="Headline">О лоте</h3>
           <h5>Изображения</h5>
         </div>
-        {/*
-      <div className="AboutLot__slider">
-        <img src={clock} />
-        <img src={clock} />
-        <img src={clock} />
-        <div>
-          <img src={add} />
-          <h5>
-            Добавить
-            <br />
-            изображение
-          </h5>
+        <div style={{marginTop: "17px"}}>
+            <SimpleSliderTraider />
         </div>
-        <button className="btn1">
-          <img src={btn} />
-        </button>
-        <button className="btn2">
-          <img src={btn} />
-        </button>
-</div>*/}
+      
 
         <div className="AboutLot__description">
           <div className="AboutLot__description-left">
@@ -149,25 +135,30 @@ function AboutLot() {
               </div>
             </div>
             <div className="block-about-bottom">
-                <h4>Место продажи</h4>
-                <h3>119049 г. Москва, Проспект вернадского, 43</h3>
-                <hr className="about-hr" />
-              </div>
+              <h4>Место продажи</h4>
+              <h3>119049 г. Москва, Проспект вернадского, 43</h3>
+              <hr className="about-hr" />
+            </div>
           </div>
 
-
           <div className="AboutLot__sale-right">
+            <div className="block-about">
+              <h4>Статус лота</h4>
+              <h3>
+                Собрал инвестиции{" "}
+                <a href="#">
+                  <span>
+                    <img src={tick} />
+                  </span>
+                </a>
+              </h3>
+            </div>
 
-          <div className="block-about">
-                <h4>Статус лота</h4>
-                <h3>Собрал инвестиции <a href="#"><span><img src={tick} /></span></a></h3>
-              </div>
-
-              <div className="block-about-bottom">
-                <h4>Информация о покупателе</h4>
-                <h3>Орехов Виталий Александрович</h3>
-                <hr className="about-hr" />
-              </div>
+            <div className="block-about-bottom">
+              <h4>Информация о покупателе</h4>
+              <h3>Орехов Виталий Александрович</h3>
+              <hr className="about-hr" />
+            </div>
           </div>
         </div>
 
