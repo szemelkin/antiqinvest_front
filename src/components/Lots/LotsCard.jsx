@@ -16,7 +16,7 @@ function LotsCard({setModalActive, img, lot, status, capital, payment }) {
     <>
       <div className="Lots__block">
         <div className="Lots__list">
-          <img src={img} alt="clock" />
+          <img src={img} alt="clock" className="imgCard"/>
 
           <div className="Lots__lot width-big">
             <h6>Лот 1</h6>

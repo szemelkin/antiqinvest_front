@@ -3,7 +3,7 @@ import clock from "./assets/images/clock.png";
 import classic from "./assets/images/classic.png";
 import trade from "./assets/images/trade.png";
 import vabank from "./assets/images/vabank.png";
-
+import profile from "./assets/images/profile.png";
 
 export const free = 100000;
 export const use = 200000;
@@ -137,6 +137,7 @@ export const productData = [
     sum: "75 000",
     profit: "10 000",
     payment: 2000,
+    term: '20 дней',
   },
   {
     img: trade,
@@ -146,6 +147,7 @@ export const productData = [
     sum: "75 000",
     profit: "10 000",
     payment: 0,
+    term: '20 дней',
   },
   {
     img: vabank,
@@ -154,6 +156,7 @@ export const productData = [
     sum: "75 000",
     profit: "10 000",
     payment: 0,
+    term: '20 дней',
   },
 ];
 
@@ -176,33 +179,36 @@ export const productCard = [
   },
 ];
 
-
 /**админ**/
 /**все пользователи**/
 
 export const allusers = [
   {
-    img: clock,
+    img2: profile,
     name: "Иванов Иван Иванович",
     id: "id_8985421",
     role: "Администратор",
+    idBriefcase: "id_8985421",
   },
   {
-    img: clock,
+    img2: profile,
     name: "Иванов Иван Иванович",
     id: "id_8985421",
     role: "Скаут",
+    idBriefcase: "id_8985421",
   },
   {
-    img: clock,
+    img2: profile,
     name: "Иванов Иван Иванович",
     id: "id_8985421",
     role: "Инвестор",
+    idBriefcase: "id_8985421",
   },
   {
-    img: clock,
+    img2: profile,
     name: "Иванов Иван Иванович",
     id: "id_8985421",
     role: "Администратор",
+    idBriefcase: "id_8985421",
   },
 ];

@@ -15,11 +15,14 @@ import { Switch, Route, NavLink } from "react-router-dom";
 import Search from "../Lots/Search";
 import LotsAdmin from "../Lots/LotsAdmin";
 import LotsAdminBriefCase from "../Lots/LostAdminBriefcase";
+import LotsCardAdmin from "../Lots/LostCardAdmin";
+import LostCardAdminAllusers from "../Lots/LostCardAdminAllusers";
+import ProductsAdmin from "../Products/ProductsAdmin";
 
 function CabinetHeadlineAdmin() {
   return (
     <>
-      <ul className="Cabinet">
+      <ul className="Cabinet cabinetAdmin">
         <li className="Cabinet__block AdminCabinet__block">
           <img src={people} />
           <NavLink exact to="/cabinetadmin/alllots">
@@ -57,7 +60,7 @@ function CabinetHeadlineAdmin() {
               <div className="marginTop63">
                 <Search />
                 <div className="marginTop63">
-                  <LotsAdmin />
+                  <LotsTraider />
                 </div>
               </div>
             </>
@@ -71,7 +74,7 @@ function CabinetHeadlineAdmin() {
               <div className="marginTop63">
                 <Search />
                 <div className="marginTop63"></div>
-                <LotsTraider />
+                <LotsAdminBriefCase />
               </div>
             </>
           )}
@@ -84,7 +87,7 @@ function CabinetHeadlineAdmin() {
               <div className="marginTop63">
                 <Search />
                 <div className="marginTop63"></div>
-                <LotsAdminBriefCase />
+                <LostCardAdminAllusers />
               </div>
             </>
           )}
@@ -98,7 +101,7 @@ function CabinetHeadlineAdmin() {
               <div className="marginTop63">
                 <Search />
                 <div className="marginTop63"></div>
-                <Products />
+                <ProductsAdmin />
               </div>
             </>
           )}

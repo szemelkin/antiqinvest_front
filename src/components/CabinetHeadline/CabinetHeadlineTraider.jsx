@@ -20,28 +20,28 @@ function CabinetHeadlineTraider() {
       <ul className="Cabinet">
         <li className="Cabinet__block">
           <img src={people} />
-          <NavLink exact to="/cabinet">
+          <NavLink exact to="/cabinetraider">
             Кабинет
           </NavLink>
         </li>
 
         <li className="Cabinet__block">
           <img src={info} />
-          <NavLink exact to="/cabinet/briefcase">
+          <NavLink exact to="/cabinetraider/briefcase">
             Портфель
           </NavLink>
         </li>
 
         <li className="Cabinet__block">
           <img src={briefcase} />
-          <NavLink exact to="/cabinet/lots">
+          <NavLink exact to="/cabinetraider/lots">
             Все лоты
           </NavLink>
         </li>
       </ul>
       <div>
         <Route
-          path="/cabinet"
+          path="/cabinetraider"
           exact
           render={() => (
             <>
@@ -53,7 +53,7 @@ function CabinetHeadlineTraider() {
           )}
         />
         <Route
-          path="/cabinet/briefcase"
+          path="/cabinetraider/briefcase"
           exact
           render={() => (
             <>
@@ -68,7 +68,7 @@ function CabinetHeadlineTraider() {
           )}
         />
         <Route
-          path="/cabinet/lots"
+          path="/cabinetraider/lots"
           exact
           render={() => (
             <>

@@ -81,6 +81,12 @@
 }
 
 .AdminCabinet__block {
-  width: 230px;
-  margin-right: 60px;
+  width: 250px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .cabinetAdmin  {
+    flex-wrap: wrap;
+  }
 }

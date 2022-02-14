@@ -5,26 +5,25 @@ import BringMoney from "../Modal/BringMoney";
 import React, { useState, useContext } from "react";
 import Context from "../../Context";
 
-function LotsAdmin(event) {
+function LostCardAdminAllusers(event) {
   const [modalActive, setModalActive] = useState(false);
   const value = useContext(Context);
 
-  console.log(value.lots)
+
   return (
     <>
       <div className="Lots">
-        <h3>Все лоты</h3>
-        {value.lots.map((item, index) => {
+        <h3>Все порфели</h3>
+        {value.allusers.map((item, index) => {
           return (
             <LotsCardAdmin
-              key={index}
-              modalActive={modalActive}
-              setModalActive={setModalActive}
-              img={item.img}
-              lot={item.lot}
-              status={item.status}
-              capital={item.capital}
-              payment={item.payment}
+            key={index}
+            modalActive={modalActive}
+            setModalActive={setModalActive}
+            img2={item.img2}
+            name={item.name}
+            id={item.id}
+            idBriefcase={item.idBriefcase}
             />
           );
         })}
@@ -34,4 +33,4 @@ function LotsAdmin(event) {
   );
 }
 
-export default LotsAdmin;
+export default LostCardAdminAllusers;

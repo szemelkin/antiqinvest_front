@@ -47,6 +47,7 @@ function App() {
     allusers,
   };
 
+
   return (
     <div className="App">
       {/*главная страница*/}
@@ -54,9 +55,10 @@ function App() {
         <Router>
           <Link to="/"></Link>
           <Link to="/cabinet"></Link>
-          <Link to="/cabinetadmin"></Link>
           <Link to="/cabinet/lots"></Link>
           <Link to="/cabinet/briefcase"></Link>
+          <Link to="/cabinetraider"></Link>
+          <Link to="/cabinetadmin"></Link>
        
           {/* пользователь
          <Route exact path="/" component={Home} />
@@ -65,9 +67,9 @@ function App() {
           <Route exact path="/cabinet/briefcase" component={Cabinet} />*/}
           {/*трейдер
           <Route exact path="/" component={Home} />
-          <Route exact path="/cabinet" component={CabinetTraider} />
-          <Route exact path="/cabinet/lots" component={CabinetTraider} />
-          <Route exact path="/cabinet/briefcase" component={CabinetTraider} />
+          <Route exact path="/cabinetraider" component={CabinetTraider} />
+          <Route exact path="/cabinetraider/lots" component={CabinetTraider} />
+          <Route exact path="/cabinetraider/briefcase" component={CabinetTraider} />
           <Route
             exact
             path="/cabinet/cabinet/lots/edit"
@@ -81,10 +83,10 @@ function App() {
           <Route exact path="/cabinetadmin/allusers" component={AdminCabinet} />
           <Route exact path="/cabinetadmin/allbriefcase" component={AdminCabinet} />
           <Route exact path="/cabinetadmin/allpropducts" component={AdminCabinet} />
-        {/*  <Route
+       <Route
             exact
             path="/cabinet/cabinetadmin/lots/edit"
-        component={EditTrader} />*/}
+        component={EditTrader} />
         </Router>
       </Context.Provider>
 

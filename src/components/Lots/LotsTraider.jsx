@@ -12,7 +12,7 @@ function LotsTraider(event) {
   return (
     <>
       <div className="Lots">
-        <h3>Все пользователи</h3>
+        <h3>Все лоты</h3>
         {value.lots.map((item, index) => {
           return (
             <LotsCardTraider

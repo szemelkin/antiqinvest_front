@@ -1,36 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./LotsCard.css";
 import "../../index.css";
+import Context from "../../Context";
 
 
 
-function LotsCardAdmin({setModalActive, img, lot, status, capital, payment }) {
+function LotsCardAdmin({setModalActive, img2, name, id, idBriefcase }) {
   const [buttonDisabled, setButtonDisabled] = useState(true);
+  const value = useContext(Context);
 
-    let conversionPayment = payment
-    .toString()
-    .replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + " ");
-
-  
   return (
     <>
       <div className="Lots__block">
         <div className="Lots__list">
-          <img src={img} alt="clock" />
+          <img  className="imgProfile" src={img2} alt="clock"/>
 
           <div className="Lots__lot width-big">
             <h6>ФИО</h6>
-            <h3>{lot}</h3>
+            <h3>{name}</h3>
           </div>
 
           <div className="Lots__lot width">
             <h6>ID пользователя</h6>
-            <h3>{status}</h3>
+            <h3>{id}</h3>
           </div>
 
           <div className="Lots__lot width">
-            <h6>Роль</h6>
-            <h3>{capital} ₽</h3>
+            <h6>ID порфеля</h6>
+            <h3>{idBriefcase}</h3>
           </div>
 
  
