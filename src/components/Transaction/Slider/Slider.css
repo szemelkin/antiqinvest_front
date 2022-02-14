@@ -1,33 +1,33 @@
 
 
-.slick-slider {
+.sliderMain {
   width: 1550px;
   height: 413px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1630px) {
-  .slick-slider {
+  .sliderMain {
     width: 1040px;
     height: 330px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .slick-slider {
+  .sliderMain {
     width: 712px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .slick-slider {
+  .sliderMain {
     width: 326px;
     height: 670px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .slick-slider {
+  .sliderMain {
     width: 95%;
   }
 }

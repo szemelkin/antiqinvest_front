@@ -19,7 +19,7 @@ function AboutLot() {
           <h3 className="Headline">О лоте</h3>
           <h5>Изображения</h5>
         </div>
-        <div style={{marginTop: "17px"}}>
+        <div style={{marginTop: "17px", height: "169px", display: 'flex'}}>
             <SimpleSliderTraider />
         </div>
       

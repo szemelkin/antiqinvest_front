@@ -62,6 +62,7 @@ export default function SimpleSlider() {
   ];
 
   const settings = {
+    className: 'sliderMain',
     dots: false,
     infinite: true,
     speed: 300,

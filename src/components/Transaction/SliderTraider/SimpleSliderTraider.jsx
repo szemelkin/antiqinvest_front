@@ -1,11 +1,10 @@
 import React from "react";
-import Slider2 from "react-slick";
+import Slider from "react-slick";
 import SliderCardTraider from "./SliderCardTraider";
+import SliderTraider from "./SliderTraider";
 
-
-
-import buttonRight from "../../../assets/images/button-right.png";
-import buttonLeft from "../../../assets/images/button-left.png";
+import buttonRight from "../../../assets/images/button-yellow.png";
+import buttonLeft from "../../../assets/images/button-yellow-left.png";
 
 import clock from "../../../assets/images/slider-image1920.png";
 import tableware from "../../../assets/images/tableware.png";
@@ -14,7 +13,7 @@ import gramophone from "../../../assets/images/gramophone.png";
 export function SampleNextArrow(props) {
   const { style, onClick } = props;
   return (
-    <div className="btn-left" style={{ ...style }} onClick={onClick}>
+    <div className="btn-left1" style={{ ...style }} onClick={onClick}>
       <img src={buttonRight} />
     </div>
   );
@@ -23,7 +22,7 @@ export function SampleNextArrow(props) {
 export function SamplePrevArrow(props) {
   const { style, onClick } = props;
   return (
-    <div className="btn-right" style={{ ...style }} onClick={onClick}>
+    <div className="btn-right1" style={{ ...style }} onClick={onClick}>
       <img src={buttonLeft} />
     </div>
   );
@@ -49,6 +48,7 @@ export default function SimpleSliderTraider() {
   ];
 
   const settings = {
+    className: "sliderTraide",
     dots: false,
     infinite: true,
     speed: 300,
@@ -66,7 +66,7 @@ export default function SimpleSliderTraider() {
         },
       },
       {
-        breakpoint: 1280,
+        breakpoint: 1110,
         settings: {
           slidesToShow: 2,
         },
@@ -82,17 +82,11 @@ export default function SimpleSliderTraider() {
   };
   return (
     <>
-      <Slider2 {...settings}>
+      <Slider {...settings}>
         {sliderData.map((item, index) => {
-          return (
-            <SliderCardTraider
-              img={item.img}
-            />
-          );
+          return <SliderCardTraider img={item.img} />;
         })}
-      </Slider2>
-
-
+      </Slider>
     </>
   );
 }

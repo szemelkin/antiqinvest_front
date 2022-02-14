@@ -1,6 +1,5 @@
 import "./SliderCardTraider.css";
 
-
 function SliderCardTraider({ img }) {
   return (
     <>

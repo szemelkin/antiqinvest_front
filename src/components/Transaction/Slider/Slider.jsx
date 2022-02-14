@@ -1,7 +1,7 @@
 import "./Slider.css";
 import buttonRight from "../../../assets/images/button-right.png";
 import buttonLeft from "../../../assets/images/button-left.png";
-
+{/*
 function Slider() {
   return (
     <div className="botton-wrapper">
@@ -18,3 +18,4 @@ function Slider() {
 }
 
 export default Slider;
+*/}

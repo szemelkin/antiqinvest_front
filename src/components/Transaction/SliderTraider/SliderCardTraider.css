@@ -1,5 +1,6 @@
 .sliderTraider__wraper {
   width: 328px;
+  height: 170px;
   box-sizing: border-box;
 }
 
@@ -12,13 +13,11 @@
 @media screen and (max-width: 767px) {
   .sliderTraider__wraper {
     margin-bottom: 20px;
-    width: 326px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .sliderTraider__wraper {
-    margin-bottom: 20px;
     width: 100%
   }
 }
@@ -26,3 +25,44 @@
 .sliderTraider__wraper > img {
   width: 100%;
 }
+
+
+.btn-right1 {
+  position: absolute;
+  top: 40%;
+  left: -15px;
+    z-index: 5;
+}
+
+@media screen and (max-width: 375px) {
+  .btn-right1 {
+    top: 35%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn-right1 {
+    top: 30%;
+  }
+}
+
+
+.btn-left1 {
+  position: absolute;
+  top: 40%;
+  right: -15px;
+  z-index: 5;
+}
+
+@media screen and (max-width: 375px) {
+  .btn-left1  {
+    top: 35%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn-left1  {
+    top: 30%;
+  }
+}
+

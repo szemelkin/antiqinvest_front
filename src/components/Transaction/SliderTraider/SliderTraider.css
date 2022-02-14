@@ -1,127 +1,37 @@
-/*
-.slick-slider {
-  width: 1550px;
-  height: 413px;
+.sliderTraide {
+  width: 100%;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1630px) {
-  .slick-slider {
-    width: 1040px;
-    height: 330px;
+@media screen and (max-width: 1440px) {
+  .sliderTraide {
+    width: 1000px;
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .slick-slider {
-    width: 712px;
+@media screen and (max-width: 1110px) {
+  .sliderTraide {
+    width: 660px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .slick-slider {
-    width: 326px;
-    height: 670px;
+@media screen and (max-width: 768px) {
+  .sliderTraide {
+    width: 328px;
   }
 }
 
-@media screen and (max-width: 375px) {
-  .slick-slider {
+@media screen and (max-width: 425px) {
+  .sliderTraide {
     width: 95%;
   }
 }
 
-
-.slider {
-  height: 413px;
-  width: 474px;
-  background: white;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 1630px) {
-  .slider {
-    width: 326px;
-    height: 322px;
+@media screen and (max-width: 330px) {
+  .sliderTraide {
+    width: 99%;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .slider {
-    height: 303px;
-    width: 100%;
-  }
-}
 
-.slider > img {
-  width: 100%;
-  border-radius: 10px;
-}
 
-.slick-prev:before,
-.slick-next:before {
-  display: none;
-}
-
-.btn-left {
-  position: absolute;
-  top: -120px;
-  right: 150px;
-}
-
-@media screen and (max-width: 1630px) {
-  .btn-left {
-    right: 100px;
-  }
-}
-
-@media screen and (max-width: 1550px) {
-  .btn-left {
-    top: -115px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .btn-left {
-    right: 70px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .btn-left {
-    top: 710px;
-    right: 0;
-  }
-}
-
-.btn-right {
-  position: absolute;
-  top: -120px;
-  right: 220px;
-}
-
-@media screen and (max-width: 1630px) {
-  .btn-right {
-    right: 180px;
-  }
-}
-
-@media screen and (max-width: 1550px) {
-  .btn-right {
-    top: -115px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .btn-right {
-    right: 160px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .btn-right {
-    top: 710px;
-    right: 70px;
-  }
-}
-*/
