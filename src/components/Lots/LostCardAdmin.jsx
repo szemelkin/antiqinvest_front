@@ -9,6 +9,7 @@ function LotsCardAdmin({setModalActive, img2, name, id, idBriefcase }) {
   const [buttonDisabled, setButtonDisabled] = useState(true);
   const value = useContext(Context);
 
+
   return (
     <>
       <div className="Lots__block">
@@ -34,7 +35,7 @@ function LotsCardAdmin({setModalActive, img2, name, id, idBriefcase }) {
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
             <button>Подробно</button>
-            <a href="/"><button>Редактировать</button></a>
+            <a href="/cabinetadmin/allbriefcase/edit"><button>Редактировать</button></a>
        
         </div>
       </div>

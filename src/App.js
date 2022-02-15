@@ -33,6 +33,7 @@ import CabinetTraider from "./components/CabinetTraider";
 import AdminCabinet from "./components/AdminCabinet";
 import Home from "./components/Home";
 import EditTrader from "./components/EditTrader";
+import EditAdmin from "./components/EditAdmin";
 import Context from "./Context";
 
 function App() {
@@ -79,7 +80,7 @@ function App() {
             component={EditTrader}
           />
 
-          {/*админка
+          {/*админка*/}
           <Route exact path="/" component={Home} />
           <Route exact path="/cabinetadmin" component={AdminCabinet} />
           <Route exact path="/cabinetadmin/alllots" component={AdminCabinet} />
@@ -88,8 +89,8 @@ function App() {
           <Route exact path="/cabinetadmin/allpropducts" component={AdminCabinet} />
        <Route
             exact
-            path="/cabinet/cabinetadmin/lots/edit"
-        component={EditTrader} />*/}
+            path="/cabinetadmin/allbriefcase/edit"
+        component={EditAdmin} />
         </Router>
       </Context.Provider>
     </div>

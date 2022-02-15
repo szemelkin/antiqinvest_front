@@ -9,7 +9,6 @@ function LotsAdmin(event) {
   const [modalActive, setModalActive] = useState(false);
   const value = useContext(Context);
 
-  console.log(value.lots)
   return (
     <>
       <div className="Lots">
