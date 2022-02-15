@@ -11,7 +11,7 @@ function EditLotAdmin() {
   return (
     <div className="EditLot">
       <div className="EditLot__block">
-        <a href="/cabinetadmin">
+        <a href="/cabinetadmin/alllots">
           <img src={back} />
           <h6>Назад</h6>
         </a>
