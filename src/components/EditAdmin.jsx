@@ -11,7 +11,7 @@ function EditAdmin() {
     <div className="Background-wrapper">
       <Header />
       <div className="wrapper">
-        <div>
+        <div style={{width: "100%"}}>
           <div className="marginTop70">
             <MainCabinetTraider />
           </div>

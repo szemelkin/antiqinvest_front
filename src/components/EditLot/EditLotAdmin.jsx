@@ -14,7 +14,7 @@ function EditLotAdmin() {
           <img src={back} />
           <h6>Назад</h6>
         </a>
-        <h4>Редактировать профиль пользователя</h4>
+        <h4>Редактировать порфель пользователя</h4>
       </div>
       <button onClick={() => setModalOpen(true)}>Сохранить</button>
     </div>

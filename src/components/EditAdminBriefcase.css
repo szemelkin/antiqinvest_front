@@ -1,0 +1,16 @@
+.inputMoneyBlocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+    .inputMoneyBlocks {
+      flex-direction: column;
+
+    }
+  }
+
+.inputMoneyBlocks > div {
+  margin-bottom: 20px;
+}

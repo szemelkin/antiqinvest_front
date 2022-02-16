@@ -98,6 +98,7 @@
   line-height: 109%;
   color: #bbbbbb;
   margin: 0;
+  text-align: start;
 }
 
 .AboutProducts-about > h3 {
@@ -108,4 +109,5 @@
   line-height: 109%;
   color: #000000;
   margin: 6px 0px 0px;
+  text-align: start;
 }

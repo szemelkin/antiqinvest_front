@@ -1,0 +1,32 @@
+.Events {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 14px;
+  padding: 28px 102px 28px 40px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1330px) {
+  .Events {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Events {
+    padding: 20px 15px 20px 15px;
+  }
+}
+
+.Events > h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 36px;
+  color: #000000;
+  text-align: start;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+}

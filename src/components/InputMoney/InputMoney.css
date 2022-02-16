@@ -1,0 +1,84 @@
+.InputMoney {
+  width: 700px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 14px;
+  padding: 28px 56px 28px 40px;
+  text-align: start;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1440px) {
+  .InputMoney {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .InputMoney {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .InputMoney {
+    width: 95%;
+  }
+}
+
+.InputMoney > h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+}
+
+.InputMoney__blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .InputMoney__block {
+    margin-bottom: 10px;
+  }
+}
+
+.InputMoney__block > h6 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+.InputMoney__block-account {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+  margin: 0;
+}
+
+.InputMoney__block-img {
+  width: 16px;
+  height: 13px;
+  margin-left: 10px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}

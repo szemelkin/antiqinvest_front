@@ -5,13 +5,9 @@ import BringMoney from "./../Modal/BringMoney";
 import React, { useState, useContext } from "react";
 import Context from "../../Context";
 
-
 function Products() {
   const [modalActive, setModalActive] = useState(false);
-  const value = useContext(Context)
-
-  console.log(value.productData)
-
+  const value = useContext(Context);
 
   return (
     <>
