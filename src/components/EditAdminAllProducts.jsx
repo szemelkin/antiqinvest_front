@@ -15,7 +15,7 @@ function EditAdminAllProducts() {
             <MainCabinetAdmin />
           </div>
           <div className="marginTop70">
-            <EditAdminAllProducts />
+ 
           </div>
           <div className="MarginTop80">
             <AboutProducts />

@@ -46,7 +46,7 @@ function CabinetHeadlineAdmin() {
 
         <li className="Cabinet__block AdminCabinet__block">
           <img src={briefcase} />
-          <NavLink exact to="/cabinetadmin/allpropducts">
+          <NavLink exact to="/cabinetadmin/allproducts">
             Все продукты
           </NavLink>
         </li>
@@ -94,7 +94,7 @@ function CabinetHeadlineAdmin() {
         />
 
         <Route
-          path="/cabinetadmin/allpropducts"
+          path="/cabinetadmin/allproducts"
           exact
           render={() => (
             <>
