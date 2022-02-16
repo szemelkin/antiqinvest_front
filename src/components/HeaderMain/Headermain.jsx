@@ -12,7 +12,7 @@ function HeaderMain() {
       <div className="App">
         <header className="header">
           <Logo />
-          <a href="/cabinet">
+          <a href="/auth">
             <button className="header__button">Войти </button>
             <img className="needle" src={needle} />
           </a>
@@ -20,7 +20,7 @@ function HeaderMain() {
       </div>
 
     
-        <Route path="/cabinet">
+        <Route path="/auth">
           <Cabinet />
         </Route>
 

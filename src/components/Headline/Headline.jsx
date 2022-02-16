@@ -1,5 +1,5 @@
 import "./headline.css";
-import "../../index.css"
+import "../../index.css";
 
 function Headline() {
   return (
@@ -11,8 +11,8 @@ function Headline() {
       </h3>
 
       <div className="headline__block">
-      <a href="/cabinet">
-        <button className="headline__button">Войти</button>
+        <a href="/auth">
+          <button className="headline__button">Войти</button>
         </a>
         <a className="headline__link">Подробнее</a>
       </div>
