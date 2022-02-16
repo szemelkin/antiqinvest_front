@@ -34,7 +34,7 @@ function LotsCardAlluser({setModalActive, img2, name, id, role }) {
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
             <button>Подробно</button>
-            <a href="/"><button>Редактировать</button></a>
+            <a href="/cabinetadmin/allbriefcase/edit"><button>Редактировать</button></a>
        
         </div>
       </div>

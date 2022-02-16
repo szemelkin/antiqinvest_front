@@ -17,8 +17,6 @@ function ProductsCardAdmin({
     console.log("подробно");
   }
 
-
-
   return (
     <>
       <div className="ProductsCard MarginBottom18">
@@ -51,7 +49,9 @@ function ProductsCardAdmin({
             {" "}
             Подробно
           </button>
-          <button onClick={() => console.log('кнопка')}>Редактировать</button>
+          <a href="/cabinetadmin/allpropducts/editproducts">
+            <button className="btn-edit">Редактировать</button>
+          </a>
         </div>
       </div>
     </>

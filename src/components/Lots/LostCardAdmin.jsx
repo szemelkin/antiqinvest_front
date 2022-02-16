@@ -35,7 +35,7 @@ function LotsCardAdmin({setModalActive, img2, name, id, idBriefcase }) {
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
             <button>Подробно</button>
-            <a href="/cabinetadmin/allbriefcase/edit"><button>Редактировать</button></a>
+            <a href="/cabinetadmin/allbriefcase/editbrief"><button>Редактировать</button></a>
        
         </div>
       </div>

@@ -19,6 +19,9 @@ import EditTrader from "./components/EditTrader";
 import EditAdmin from "./components/EditAdmin";
 import Auth from "./components/Auth";
 import Context from "./Context";
+import EditBriefCase from "./components/EditLot/EditBriefCase";
+import EditAdminBriefcase from "./components/EditAdminBriefcase";
+import EditAdminAllProducts from "./components/EditAdminAllProducts";
 
 function App() {
   const value = {
@@ -82,6 +85,16 @@ function App() {
             exact
             path="/cabinetadmin/allbriefcase/edit"
             component={EditAdmin}
+          />
+             <Route
+            exact
+            path="/cabinetadmin/allbriefcase/editbrief"
+            component={EditAdminBriefcase}
+          />
+                    <Route
+            exact
+            path="/cabinetadmin/allpropducts/editproducts"
+            component={EditAdminAllProducts}
           />
         </Router>
       </Context.Provider>

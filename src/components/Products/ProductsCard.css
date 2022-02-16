@@ -139,25 +139,42 @@
   text-align: center;
   letter-spacing: 0.005em;
   color: #6f6f6f;
-  background: #FFDB5E;
+  background: #ffdb5e;
   flex: none;
   order: 0;
   flex-grow: 0;
   cursor: pointer;
 }
 
-
 .ProductsCard-buttonsBlock > button:disabled {
-  background: #FFF2C5;
+  background: #fff2c5;
   cursor: default;
 }
-
-
-
 
 @media screen and (max-width: 425px) {
   .ProductsCard-buttonsBlock > button {
     width: 100%;
     margin-bottom: 15px;
   }
+}
+
+.btn-edit {
+  width: 142px;
+  height: 40px;
+  background: #fff2c5;
+  border-radius: 3px;
+  border: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #6f6f6f;
+  background: #ffdb5e;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
 }

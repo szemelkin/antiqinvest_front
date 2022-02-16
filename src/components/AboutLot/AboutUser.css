@@ -9,6 +9,18 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1280px) {
+  .AboutUser {
+    padding: 25px 40px 25px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .AboutUser {
+    padding: 20px;
+  }
+}
+
 .AboutUser__headline {
   margin-top: 28px;
 }
@@ -17,13 +29,26 @@
   display: flex;
 }
 
+@media screen and (max-width: 600px) {
+  .AboutUser__description {
+    flex-direction: column;
+  }
+}
+
 .AboutUser__description > img {
- width: 98px;
- height: 98px;
+  width: 98px;
+  height: 98px;
 }
 
 .AboutUser__description-left {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .AboutUser__description-left {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .AboutUser-block {
@@ -38,7 +63,6 @@
 .AboutUser-block > .AboutUser-about:not(:first-child) {
   width: 215px;
 }
-
 
 .AboutUser-about {
   text-align: start;
@@ -64,4 +88,3 @@
   color: #000000;
   margin: 6px 0px 0px;
 }
-

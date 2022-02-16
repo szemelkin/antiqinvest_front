@@ -1,6 +1,6 @@
 function Auth() {
   return (
-    <div style={{background: "white", height: "1000px", paddingTop: '250px'}}>
+    <div style={{ background: "white", height: "1000px", paddingTop: "250px" }}>
       <a href="/cabinet">
         <button>Пользователь</button>
       </a>
