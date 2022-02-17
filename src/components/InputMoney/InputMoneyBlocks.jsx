@@ -2,7 +2,9 @@ import "./InputMoney.css";
 import "./InputMoney.css";
 import yey from "../../assets/images/yey.png";
 
-function InputMoneyBlocks({ account, data, sum }) {
+function InputMoneyBlocks({color, account, data, sum }) {
+
+
   return (
     <div className="InputMoney__blocks">
       <div className="InputMoney__block">
@@ -20,7 +22,7 @@ function InputMoneyBlocks({ account, data, sum }) {
 
       <div className="InputMoney__block">
         <h6>Сумма зачисления</h6>
-        <h3 className="InputMoney__block-account green">- {sum} ₽</h3>
+        <h3 className="InputMoney__block-account" style={color}>- {sum} ₽</h3>
       </div>
     </div>
   );
