@@ -185,6 +185,7 @@ export const productCard = [
 export const allusers = [
   {
     img2: profile,
+    img: clock,
     name: "Иванов Иван Иванович",
     id: "id_8985421",
     role: "Администратор",
@@ -192,6 +193,7 @@ export const allusers = [
   },
   {
     img2: profile,
+    img: clock,
     name: "Иванов Иван Иванович",
     id: "id_8985421",
     role: "Скаут",
@@ -199,6 +201,7 @@ export const allusers = [
   },
   {
     img2: profile,
+    img: clock,
     name: "Иванов Иван Иванович",
     id: "id_8985421",
     role: "Инвестор",
@@ -206,6 +209,7 @@ export const allusers = [
   },
   {
     img2: profile,
+    img: clock,
     name: "Иванов Иван Иванович",
     id: "id_8985421",
     role: "Администратор",

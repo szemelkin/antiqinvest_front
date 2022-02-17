@@ -1,20 +1,16 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import "./LotsCard.css";
 import "../../index.css";
-import Context from "../../Context";
 
 
-
-function LotsCardAdmin({setModalActive, img2, name, id, idBriefcase }) {
-  const [buttonDisabled, setButtonDisabled] = useState(true);
-  const value = useContext(Context);
-
+function LotsCardAdmin({ img, name, id, idBriefcase }) {
+console.log(img)
 
   return (
     <>
       <div className="Lots__block">
         <div className="Lots__list">
-          <img  className="imgProfile" src={img2} alt="clock"/>
+          <img className="imgProfile2" src={img} alt="clock" />
 
           <div className="Lots__lot width-big">
             <h6>ФИО</h6>
@@ -30,13 +26,12 @@ function LotsCardAdmin({setModalActive, img2, name, id, idBriefcase }) {
             <h6>ID порфеля</h6>
             <h3>{idBriefcase}</h3>
           </div>
-
- 
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
-            <button>Подробно</button>
-            <a href="/cabinetadmin/allbriefcase/editbrief"><button>Редактировать</button></a>
-       
+          <button>Подробно</button>
+          <a href="#">
+            <button>Редактировать</button>
+          </a>
         </div>
       </div>
       <hr></hr>

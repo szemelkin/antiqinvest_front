@@ -13,17 +13,14 @@ function LotsAdmin(event) {
     <>
       <div className="Lots">
         <h3>Все лоты</h3>
-        {value.lots.map((item, index) => {
+        {value.allusers.map((item, index) => {
           return (
             <LotsCardAdmin
               key={index}
-              modalActive={modalActive}
-              setModalActive={setModalActive}
               img={item.img}
-              lot={item.lot}
-              status={item.status}
-              capital={item.capital}
-              payment={item.payment}
+              name={item.name}
+              id={item.id}
+              idBriefcase={item.idBriefcase}
             />
           );
         })}

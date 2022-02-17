@@ -20,7 +20,7 @@ function LostCardAdminAllusers(event) {
             key={index}
             modalActive={modalActive}
             setModalActive={setModalActive}
-            img2={item.img2}
+            img={item.img}
             name={item.name}
             id={item.id}
             idBriefcase={item.idBriefcase}

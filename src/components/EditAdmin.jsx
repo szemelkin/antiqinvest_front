@@ -1,7 +1,7 @@
 import "../index.css";
 import "../App.css";
 import Header from "./Header/Header";
-import MainCabinetTraider from "./MainCabinet/MainCabinetTraider";
+import MainCabinetAdmin from "./MainCabinet/MainCabinetAdmin";
 import EditLotAdmin from "./EditLot/EditLotAdmin";
 import AboutUser from "./AboutLot/AboutUser";
 import Footer from "./Footer/Footer";
@@ -13,7 +13,7 @@ function EditAdmin() {
       <div className="wrapper">
         <div style={{width: "100%"}}>
           <div className="marginTop70">
-            <MainCabinetTraider />
+            <MainCabinetAdmin />
           </div>
           <div className="MarginTop80">
             <EditLotAdmin />

@@ -60,7 +60,7 @@ function CabinetHeadlineAdmin() {
               <div className="marginTop63">
                 <Search />
                 <div className="marginTop63">
-                  <LotsTraider />
+                  <LotsAdmin />
                 </div>
               </div>
             </>

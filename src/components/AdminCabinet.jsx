@@ -5,14 +5,17 @@ import MainCabinetAdmin from "./MainCabinet/MainCabinetAdmin";
 import Footer from "./Footer/Footer";
 
 function AdminCabinet() {
+  const mb = {
+    marginBottom: "80px",
+  };
+
   return (
     <div className="Background-wrapper">
       <Header />
       <div className="wrapper">
-        <div className="marginTop70">
-         <MainCabinetAdmin />
+        <div className="marginTop70" style={mb}>
+          <MainCabinetAdmin />
         </div>
-        <div className="MarginTop80"></div>
       </div>
       <Footer />
     </div>

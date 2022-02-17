@@ -10,15 +10,15 @@ function EditTrader() {
   return (
     <div className="Background-wrapper">
       <Header />
-      <div className="wrapper">
+      <div>
         <div className="marginTop70">
-         <MainCabinetTraider />      
+          <MainCabinetTraider />
         </div>
         <div className="marginTop70">
-        <EditLot />
+          <EditLot />
         </div>
         <div className="marginTop70">
-        <AboutLot />
+          <AboutLot />
         </div>
 
         <div className="MarginTop80"></div>

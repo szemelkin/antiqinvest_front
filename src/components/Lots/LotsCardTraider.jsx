@@ -40,7 +40,7 @@ function LotsCardTraider({setModalActive, img, lot, status, capital, payment }) 
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
             <button>Подробно</button>
-            <a href="#"><button>Редактировать</button></a>
+            <a href="/cabinetraider/lots/edit"><button>Редактировать</button></a>
        
         </div>
       </div>
