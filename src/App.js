@@ -57,7 +57,7 @@ function App() {
           <Route exact path="/cabinet/lots" component={Cabinet} />
           <Route exact path="/cabinet/briefcase" component={Cabinet} />
           {/*трейдер*/}
-          <Route exact path="/" component={Home} />
+
           <Route exact path="/cabinetraider" component={CabinetTraider} />
           <Route exact path="/cabinetraider/lots" component={CabinetTraider} />
           <Route
@@ -68,7 +68,7 @@ function App() {
           <Route exact path="/cabinetraider/lots/edit" component={EditTrader} />
 
           {/*админка*/}
-          <Route exact path="/" component={Home} />
+
           <Route exact path="/cabinetadmin" component={AdminCabinet} />
           <Route exact path="/cabinetadmin/alllots" component={AdminCabinet} />
           <Route exact path="/cabinetadmin/allusers" component={AdminCabinet} />

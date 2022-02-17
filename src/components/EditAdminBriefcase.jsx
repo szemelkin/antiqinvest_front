@@ -8,6 +8,7 @@ import Footer from "./Footer/Footer";
 import AboutBriefcase from "./AboutLot/AboutBriefcase";
 import EditAdminCards from "./EditLot/EditAdminCard/EditAdminCards";
 import InputMoney from "./InputMoney/InputMoney";
+import EditIvestCards from "./EditLot/EditInvestCards";
 
 function EditAdminBriefcase() {
   const headline = "Внесение средств";
@@ -67,11 +68,16 @@ function EditAdminBriefcase() {
     color: "green",
   };
 
+
+  const mb40 = {
+    marginBottom: '40px',
+  }
+  
   return (
     <div className="Background-wrapper">
       <Header />
       <div className="wrapper">
-        <div style={{ width: "100%" }}>
+        <div className="ww">
           <div className="marginTop70">
             <MainCabinetAdmin />
           </div>
@@ -88,13 +94,13 @@ function EditAdminBriefcase() {
 
           <div className="MarginTop80">
             <div className="inputMoneyBlocks">
-              <div>
-                <InputMoney color={green} data={data} headline={headline}/>
-              </div>
-              <div>
-                <InputMoney color={red} data={data2} headline={headline2}/>
-              </div>
+              <InputMoney color={green} data={data} headline={headline} />
+              <InputMoney color={red} data={data2} headline={headline2} />
             </div>
+          </div>
+
+          <div className="MarginTop70" style={mb40}>
+            <EditIvestCards />
           </div>
         </div>
       </div>

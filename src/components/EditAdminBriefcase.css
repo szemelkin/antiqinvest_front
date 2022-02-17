@@ -1,12 +1,26 @@
+.ww {
+  width: 100%;
+}
+
+
 .inputMoneyBlocks {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    width: 1480px;
+}
+
+@media screen and (max-width: 1550px) {
+  .inputMoneyBlocks {
+    width: 100%;
+
+  }
 }
 
 @media screen and (max-width: 1440px) {
     .inputMoneyBlocks {
       flex-direction: column;
+      width: 100%;
 
     }
   }

@@ -48,17 +48,15 @@
 
 @media screen and (max-width: 768px) {
   .EditLot__block > a {
-      margin: 0px 50px 0px 0px;
+    margin: 0px 50px 0px 0px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .EditLot__block > a {
-      margin: 0px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
   }
 }
-
-
 
 .EditLot__block > a > img {
   width: 13px;
@@ -88,10 +86,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .EditLot__block > h4 {
-        font-size: 18px;
-    }
+  .EditLot__block > h4 {
+    font-size: 18px;
   }
+}
 
 .EditLot > button {
   border-radius: 3px;
