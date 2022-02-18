@@ -2,7 +2,8 @@ import React from "react";
 import "./LotsCard.css";
 import "../../index.css";
 
-function LotsCardAdmin({ img, name, id, idBriefcase }) {
+
+function LotsCardAdminAllLots({ img, name, id, idBriefcase }) {
   return (
     <>
       <div className="Lots__block">
@@ -26,7 +27,7 @@ function LotsCardAdmin({ img, name, id, idBriefcase }) {
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
           <button>Подробно</button>
-          <a href="/cabinetadmin/allbriefcase/edit/editbrief">
+          <a href="#">
             <button>Редактировать</button>
           </a>
         </div>
@@ -36,4 +37,4 @@ function LotsCardAdmin({ img, name, id, idBriefcase }) {
   );
 }
 
-export default LotsCardAdmin;
+export default LotsCardAdminAllLots;

@@ -1,9 +1,9 @@
 import "./Lots.css";
 import "../../index.css";
-import LotsCardAdmin from "./LostCardAdmin";
 import BringMoney from "../Modal/BringMoney";
 import React, { useState, useContext } from "react";
 import Context from "../../Context";
+import LotsCardAdminAllLots from "./LotsCardAdminAllLots";
 
 function LotsAdmin(event) {
   const [modalActive, setModalActive] = useState(false);
@@ -15,7 +15,7 @@ function LotsAdmin(event) {
         <h3>Все лоты</h3>
         {value.allusers.map((item, index) => {
           return (
-            <LotsCardAdmin
+            <LotsCardAdminAllLots
               key={index}
               img={item.img}
               name={item.name}

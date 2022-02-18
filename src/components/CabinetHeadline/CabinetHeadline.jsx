@@ -61,7 +61,9 @@ function CabinetHeadline() {
                   <Report />
                 </div>
               </div>
-              <Events />
+              <div className="MarginBottom20">
+                <Events />
+              </div>
             </>
           )}
         />

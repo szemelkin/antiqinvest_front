@@ -10,9 +10,8 @@ function CabinetTraider() {
       <Header />
       <div className="wrapper">
         <div className="marginTop70">
-         <MainCabinetTraider />
+          <MainCabinetTraider />
         </div>
-        <div className="MarginTop80"></div>
       </div>
       <Footer />
     </div>
