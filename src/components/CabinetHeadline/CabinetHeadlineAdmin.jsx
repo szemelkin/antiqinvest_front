@@ -5,17 +5,10 @@ import "../../App.css";
 import people from "../../assets/images/people.png";
 import info from "../../assets/images/info.png";
 import briefcase from "../../assets/images/briefcase.png";
-import Products from "../Products/Products";
-import Report from "../Report/Report";
-import Events from "../Events/Events";
-import Profile from "../Profile/Profile";
-import LotsTraider from "../Lots/LotsTraider";
-
 import { Switch, Route, NavLink } from "react-router-dom";
 import Search from "../Lots/Search";
 import LotsAdmin from "../Lots/LotsAdmin";
 import LotsAdminBriefCase from "../Lots/LostAdminBriefcase";
-import LotsCardAdmin from "../Lots/LostCardAdmin";
 import LostCardAdminAllusers from "../Lots/LostCardAdminAllusers";
 import ProductsAdmin from "../Products/ProductsAdmin";
 

@@ -48,7 +48,7 @@ function App() {
           <Link to="/cabinetraider"></Link>
           <Link to="/cabinetadmin"></Link>
           <Link to="/cabinetadmin/alllots"></Link>
-          <link to="/cabinetadmin/allproducts"></link>
+          <Link to="/cabinetadmin/allproducts"></Link>
 
           <Route exact path="/auth" component={Auth} />
           {/* пользователь*/}
@@ -89,7 +89,7 @@ function App() {
           />
           <Route
             exact
-            path="/cabinetadmin/allbriefcase/editbrief"
+            path="/cabinetadmin/allbriefcase/edit/editbrief"
             component={EditAdminBriefcase}
           />
           <Route

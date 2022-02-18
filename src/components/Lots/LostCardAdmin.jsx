@@ -29,7 +29,7 @@ console.log(img)
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
           <button>Подробно</button>
-          <a href="#">
+          <a href="/cabinetadmin/allbriefcase/edit/editbrief">
             <button>Редактировать</button>
           </a>
         </div>

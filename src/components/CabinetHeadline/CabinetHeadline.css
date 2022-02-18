@@ -1,19 +1,25 @@
 .Cabinet {
   display: flex;
   align-items: center;
-  height: 75px;
+  padding: 20px 0px 20px 32px;
+  margin: 0;
   background: #ffffff;
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.03);
   border-radius: 24px;
-  padding-left: 32px;
   max-width: 1480px;
   box-sizing: border-box;
-  list-style-type: none
+  list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Cabinet {
+    padding: 10px 0px 10px 10px;
+  }
 }
 
 @media screen and (max-width: 333px) {
   .Cabinet {
-    padding-left: 0px;
+    padding: 10px 0px 10px 0px;
     width: 100%;
   }
 }
@@ -24,8 +30,14 @@
 }
 
 .Cabinet__block .active {
-  border-bottom: 4px solid #FFD02F;
+  border-bottom: 4px solid #ffd02f;
   padding-bottom: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .Cabinet__block .active {
+    padding-bottom: 3px;
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -87,7 +99,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .cabinetAdmin  {
+  .AdminCabinet__block {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cabinetAdmin {
     flex-wrap: wrap;
+    /* height: auto;*/
   }
 }
