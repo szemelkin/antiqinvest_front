@@ -1,6 +1,9 @@
 import React from "react";
 import "./LotsCard.css";
 import "../../index.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+
 
 function LotsCardAdmin({ img, name, id, idBriefcase }) {
   return (
@@ -26,9 +29,9 @@ function LotsCardAdmin({ img, name, id, idBriefcase }) {
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
           <button>Подробно</button>
-          <a href="/cabinetadmin/allbriefcase/edit/editbrief">
+          <Link to="/cabinetadmin/allbriefcase/edit/editbrief">
             <button>Редактировать</button>
-          </a>
+          </Link>
         </div>
       </div>
       <hr></hr>

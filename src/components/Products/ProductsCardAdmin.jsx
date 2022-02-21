@@ -2,6 +2,8 @@ import "./ProductsCard.css";
 import "../../App.css";
 import "../../index.css";
 import i from "../../assets/images/i.png";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 
 function ProductsCardAdmin({
   setModalActive,
@@ -49,9 +51,9 @@ function ProductsCardAdmin({
             {" "}
             Подробно
           </button>
-          <a href="/cabinetadmin/allpropducts/editproducts">
+          <Link to="/cabinetadmin/allpropducts/editproducts">
             <button className="btn-edit">Редактировать</button>
-          </a>
+          </Link>
         </div>
       </div>
     </>

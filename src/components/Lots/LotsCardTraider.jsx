@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./LotsCard.css";
 import "../../index.css";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
 function LotsCardTraider({setModalActive, img, lot, status, capital, payment }) {
@@ -40,7 +40,7 @@ function LotsCardTraider({setModalActive, img, lot, status, capital, payment }) 
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
             <button>Подробно</button>
-            <a href="/cabinetraider/lots/edit"><button>Редактировать</button></a>
+            <Link to="/cabinetraider/lots/edit"><button>Редактировать</button></Link>
        
         </div>
       </div>

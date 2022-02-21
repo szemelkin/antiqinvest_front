@@ -1,15 +1,17 @@
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 function Auth() {
   return (
     <div style={{ background: "white", height: "1000px", paddingTop: "250px" }}>
-      <a href="/cabinet">
+      <Link to="/cabinet">
         <button>Пользователь</button>
-      </a>
-      <a href="/cabinetraider">
+      </Link>
+      <Link to="/cabinetraider">
         <button>Трейдер</button>
-      </a>
-      <a href="/cabinetadmin/alllots">
+      </Link>
+      <Link to="/cabinetadmin/alllots">
         <button>Администратор</button>
-      </a>
+      </Link>
     </div>
   );
 }

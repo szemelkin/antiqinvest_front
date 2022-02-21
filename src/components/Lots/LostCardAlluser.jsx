@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "./LotsCard.css";
 import "../../index.css";
 import Context from "../../Context";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
 function LotsCardAlluser({setModalActive, img2, name, id, role }) {
@@ -34,7 +34,7 @@ function LotsCardAlluser({setModalActive, img2, name, id, role }) {
         </div>
         <div className="Lots-card-buttonsBlock lots-card-style">
             <button>Подробно</button>
-            <a href="/cabinetadmin/allbriefcase/edit"><button>Редактировать</button></a>
+            <Link to="/cabinetadmin/allbriefcase/edit"><button>Редактировать</button></Link>
        
         </div>
       </div>

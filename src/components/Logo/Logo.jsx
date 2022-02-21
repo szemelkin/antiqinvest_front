@@ -1,16 +1,17 @@
 import logo from "../../assets/images/logo.png";
 import "../../index.css"
 import "./Logo.css";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function Logo() {
   return (
     <div className="logo">
-      <a href="/">
+      <Link to="/">
         <img className="logo-img" src={logo} />
-      </a>
-      <a className="logo-text" href="/">
+      </Link>
+      <Link className="logo-text" to="/">
         ANTIQ <br /> INVEST
-      </a>
+      </Link>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import "./EditLot.css";
 import back from "../../assets/images/back.png";
 import React, { useState, useContext } from "react";
 import Save from "../Modal/Save";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function EditLot() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -11,10 +12,10 @@ function EditLot() {
   return (
     <div className="EditLot">
       <div className="EditLot__block">
-        <a href="/cabinetraider/lots">
+        <Link to="/cabinetraider/lots">
           <img src={back} />
           <h6>Назад</h6>
-        </a>
+        </Link>
         <h4>Редактировать лот</h4>
       </div>
       <button onClick={() => setModalOpen(true)}>Сохранить</button>

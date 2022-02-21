@@ -1,5 +1,6 @@
 import "./headline.css";
 import "../../index.css";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function Headline() {
   return (
@@ -11,9 +12,9 @@ function Headline() {
       </h3>
 
       <div className="headline__block">
-        <a href="/auth">
+        <Link to="/auth">
           <button className="headline__button">Войти</button>
-        </a>
+        </Link>
         <a className="headline__link">Подробнее</a>
       </div>
     </div>

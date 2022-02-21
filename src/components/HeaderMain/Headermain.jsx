@@ -3,7 +3,6 @@ import Logo from "../Logo/Logo";
 import "../../index.css";
 import "./headerMain.css";
 import Cabinet from "../Cabinet";
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function HeaderMain() {
@@ -19,11 +18,9 @@ function HeaderMain() {
         </header>
       </div>
 
-    
-        <Route path="/auth">
-          <Cabinet />
-        </Route>
-
+      <Route path="/auth">
+        <Cabinet />
+      </Route>
     </Router>
   );
 }
